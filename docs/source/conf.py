@@ -6,6 +6,13 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
+# If extensions (or modules to document with autodoc) are in another directory,
+# add these directories to sys.path here.
+import pathlib
+import sys
+import os
+sys.path.insert(0, pathlib.Path(__file__).parents[1].resolve().as_posix())
+sys.path.insert(0, os.path.abspath('../code'))
 
 project = 'Jacking System Design Life'
 copyright = '2023, NOV-GustoMSC'
@@ -16,11 +23,13 @@ release = '1.0'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
-    'sphinx.ext.autosummary',
     'sphinx.ext.doctest',
     'sphinx.ext.githubpages',
     'sphinx.ext.extlinks',
+    'sphinx.ext.autodoc',
     'sphinx.ext.autosectionlabel',
+    'sphinx.ext.intersphinx',
+    'sphinx.ext.autosummary',
 ]
 
 templates_path = ['_templates']
