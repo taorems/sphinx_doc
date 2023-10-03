@@ -20,9 +20,8 @@ The repo is structured as follows:
 
 .. figure:: /_static/repo_structure.jpg
    :align: middle 
-   :width: 100%
+   :width: 90%
    :alt: Repository Structure
-...
 
 Repository Structure
 
