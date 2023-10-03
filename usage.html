@@ -143,28 +143,51 @@
 </pre></div>
 </div>
 </section>
-<section id="code-structure">
-<h2>Code Structure<a class="headerlink" href="#code-structure" title="Link to this heading">¶</a></h2>
-<p id="id2">The code is structured as follows:</p>
-<a class="reference internal image-reference" href="_static/code_structure.png"><img alt="_static/code_structure.png" class="align-center" src="_static/code_structure.png" style="width: 100%;" /></a>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">project_root/</span>
-<span class="go">├── code/</span>
-<span class="go">│   ├── lumache.py</span>
-<span class="go">│   ├── other_python_files.py</span>
-<span class="go">├── docs/</span>
-<span class="go">│   ├── build/</span>
-<span class="go">│   ├── source/</span>
-<span class="go">│   │   ├── conf.py</span>
+<section id="repository-structure">
+<h2>Repository Structure<a class="headerlink" href="#repository-structure" title="Link to this heading">¶</a></h2>
+<p id="repo-structure">The repo is structured as follows:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_static/repo_structure.png"><img alt="Repository Structure" src="_static/repo_structure.png" style="width: 80%;" /></a>
+</figure>
+<p>The text below is using ‘code-block’ directive:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>project_root/
+├── code/
+│   ├── lumache.py
+│   ├── other_python_files.py
+├── docs/
+│   ├── build/
+│   ├── source/
+│   │   ├── conf.py
 </pre></div>
 </div>
-<p>You can use the calculator class to perform various operations on numbers.</p>
-<p>Here is a sample of test python code:</p>
 </section>
-<section id="creating-recipes">
-<h2>Creating recipes<a class="headerlink" href="#creating-recipes" title="Link to this heading">¶</a></h2>
+<section id="creating-code-documentation">
+<h2>Creating code documentation<a class="headerlink" href="#creating-code-documentation" title="Link to this heading">¶</a></h2>
+<p>Here is a sample of test python code:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">test_doc</span><span class="p">():</span>
+<span class="w">   </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">   Return a list of random ingredients as strings.</span>
+
+<span class="sd">   :param kind: Optional &quot;kind&quot; of ingredients.</span>
+<span class="sd">   :type kind: list[str] or None</span>
+<span class="sd">   :raise lumache.InvalidKindError: If the kind is invalid.</span>
+<span class="sd">   :return: The ingredients list.</span>
+<span class="sd">   :rtype: list[str]</span>
+
+<span class="sd">   &quot;&quot;&quot;</span>
+   <span class="k">return</span> <span class="p">[</span><span class="s2">&quot;easy, peasy, lemon, squeezy&quot;</span><span class="p">]</span>
+
+<span class="k">class</span> <span class="nc">InvalidKindError</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+<span class="w">   </span><span class="sd">&quot;&quot;&quot;Raised if the kind is invalid.&quot;&quot;&quot;</span>
+   <span class="k">pass</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This section is done by manual writing of the code documentation in the rst file. The rst file is then converted to html using sphinx. Check the usage.rst file for the code documentation.</p>
+</div>
 <p>To retrieve a list of random ingredients,
 you can use the <code class="docutils literal notranslate"><span class="pre">lumache.get_random_ingredients()</span></code> function:</p>
-<p>This step is done by manual writing of the code documentation in the rst file. The rst file is then converted to html using sphinx. Check the usage.rst file for the code documentation.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="lumache.get_random_ingredients">
 <span class="sig-prename descclassname"><span class="pre">lumache.</span></span><span class="sig-name descname"><span class="pre">get_random_ingredients</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">kind</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#lumache.get_random_ingredients" title="Link to this definition">¶</a></dt>
@@ -194,11 +217,14 @@ will raise an exception.</p>
 <dd><p>Raised if the kind is invalid.</p>
 </dd></dl>
 
-<p>This step is done by using the sphinx-autodoc extension. The sphinx-autodoc extension is used to automatically extract docstrings from modules and classes and format them in a way readable by Sphinx. The important thing for this to work is that the path
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The steps below are done by using the sphinx-autodoc extension. The sphinx-autodoc extension is used to automatically extract docstrings from modules and classes and format them in a way readable by Sphinx. The important thing for this to work is that the path
 of the code should be added to the sys.path variable. This can be done by adding the following line to the conf.py file:</p>
 <p><code class="docutils literal notranslate"><span class="pre">sys.path.insert(0,</span> <span class="pre">os.path.abspath('../code'))</span></code></p>
 <p>In the config file, there is also a system path as follows:</p>
 <p><code class="docutils literal notranslate"><span class="pre">sys.path.insert(0,</span> <span class="pre">pathlib.Path(__file__).parents[1].resolve().as_posix())</span></code></p>
+</div>
 <p>Here is the segment of the test:</p>
 <p>You can use the <code class="docutils literal notranslate"><span class="pre">lumache.test_doc()</span></code> function:</p>
 <dl class="py function">
@@ -251,8 +277,8 @@ will raise an exception.</p>
                 <ul>
 <li><a class="reference internal" href="#">Usage</a><ul>
 <li><a class="reference internal" href="#installation">Installation</a></li>
-<li><a class="reference internal" href="#code-structure">Code Structure</a></li>
-<li><a class="reference internal" href="#creating-recipes">Creating recipes</a><ul>
+<li><a class="reference internal" href="#repository-structure">Repository Structure</a></li>
+<li><a class="reference internal" href="#creating-code-documentation">Creating code documentation</a><ul>
 <li><a class="reference internal" href="#lumache.get_random_ingredients"><code class="docutils literal notranslate"><span class="pre">lumache.get_random_ingredients()</span></code></a></li>
 <li><a class="reference internal" href="#lumache.InvalidKindError"><code class="docutils literal notranslate"><span class="pre">lumache.InvalidKindError</span></code></a></li>
 <li><a class="reference internal" href="#lumache.test_doc"><code class="docutils literal notranslate"><span class="pre">test_doc()</span></code></a></li>
