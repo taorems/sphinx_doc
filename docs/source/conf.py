@@ -14,9 +14,9 @@ import os
 sys.path.insert(0, pathlib.Path(__file__).parents[1].resolve().as_posix())
 sys.path.insert(0, os.path.abspath('../code'))
 
-project = 'Jacking System Design Life'
-copyright = '2023, NOV-GustoMSC'
-author = 'NOV-GustoMSC'
+project = 'Test Sphinx Documentation'
+copyright = '2023, Sunny'
+author = 'Sunny'
 release = '1.0'
 
 # -- General configuration ---------------------------------------------------
@@ -30,6 +30,7 @@ extensions = [
     'sphinx.ext.autosectionlabel',
     'sphinx.ext.intersphinx',
     'sphinx.ext.autosummary',
+    'sphinx.ext.imgconverter',
 ]
 
 templates_path = ['_templates']
