@@ -249,6 +249,29 @@ of the code should be added to the sys.path variable. This can be done by adding
 </dl>
 </dd></dl>
 
+<p>You can use the <code class="docutils literal notranslate"><span class="pre">math_operations.test_doc()</span></code> function:</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="math_operations.test_doc">
+<span class="sig-prename descclassname"><span class="pre">math_operations.</span></span><span class="sig-name descname"><span class="pre">test_doc</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#math_operations.test_doc" title="Link to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>Return a list of random ingredients as strings.</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>kind</strong> (<em>list</em><em>[</em><em>str</em><em>] or </em><em>None</em>) – Optional “kind” of ingredients.</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#id0" title="lumache.InvalidKindError"><strong>lumache.InvalidKindError</strong></a> – If the kind is invalid.</p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The ingredients list.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>list[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
 <p>The <code class="docutils literal notranslate"><span class="pre">kind</span></code> parameter should be either <code class="docutils literal notranslate"><span class="pre">&quot;meat&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;fish&quot;</span></code>,
 or <code class="docutils literal notranslate"><span class="pre">&quot;veggies&quot;</span></code>. Otherwise, <a class="reference internal" href="#lumache.get_random_ingredients" title="lumache.get_random_ingredients"><code class="xref py py-func docutils literal notranslate"><span class="pre">lumache.get_random_ingredients()</span></code></a>
 will raise an exception.</p>
@@ -282,6 +305,7 @@ will raise an exception.</p>
 <li><a class="reference internal" href="#lumache.get_random_ingredients"><code class="docutils literal notranslate"><span class="pre">lumache.get_random_ingredients()</span></code></a></li>
 <li><a class="reference internal" href="#lumache.InvalidKindError"><code class="docutils literal notranslate"><span class="pre">lumache.InvalidKindError</span></code></a></li>
 <li><a class="reference internal" href="#lumache.test_doc"><code class="docutils literal notranslate"><span class="pre">test_doc()</span></code></a></li>
+<li><a class="reference internal" href="#math_operations.test_doc"><code class="docutils literal notranslate"><span class="pre">test_doc()</span></code></a></li>
 <li><a class="reference internal" href="#id0"><code class="docutils literal notranslate"><span class="pre">InvalidKindError</span></code></a></li>
 </ul>
 </li>

@@ -141,31 +141,11 @@
 <h2>Dev Run<a class="headerlink" href="#dev-run" title="Link to this heading">¶</a></h2>
 <p>To run an instance of the app with a database included, run the powershell script run.dev.ps1.</p>
 <p>To access the swagger interface go to <a class="reference external" href="http://localhost:8080/docs">http://localhost:8080/docs</a></p>
-<p>Below the procedure to create an asset are described.</p>
 <p>A utility script is provided to create an asset and add operations to it. This script is located in the /app/utils/ folder and is called add_asset.py. The fastapi server needs to be running for it to work. The script can be run with the following command:</p>
 <p><code class="docutils literal notranslate"><span class="pre">`bash</span>
 <span class="pre">docker</span> <span class="pre">exec</span> <span class="pre">CONTAINER_ID</span> <span class="pre">python</span> <span class="pre">./app/utils/add_asset.py</span>
 <span class="pre">`</span></code></p>
 <p>Where CONTAINER_ID is the ID of the container running the fastapi server, you can find this with <cite>docker ps</cite>.</p>
-<p>The script will create an asset, add operations to it, do equivalent damage and total damage calculations. The asset ID is printed to the console. This ID can be used to access the asset in the other endpoints.</p>
-<p>### Creating an asset
-To create asset for testing:
-1. Access the swagger ui
-2. Go to the <cite>/api/v1/assets/upload_files</cite> endpoint.</p>
-<p>After execution you should see a succesfull response and the asset should be created in the database.</p>
-<p>It is given an id, which is used to access the asset in the other endpoints.</p>
-<p>### Adding operations to an asset
-To add operations to an asset for testing:
-1. Access the swagger ui
-2. Go to the <cite>/api/v1/operations/operations_from_json_file</cite> endpoint.</p>
-<p>After execution you should see a succesfull response with the created operations and the operations should be created in the database.</p>
-<p>### Perform the calculations
-To perform the calculations for testing:
-1. Access the swagger ui
-2. Go to the <cite>/api/v1/logic/operations/update/{asset_id}</cite> endpoint.</p>
-<p>### To display the results for a dashboard call
-1. Access the swagger ui
-2. Go to the <cite>/api/v1/logic/dashboard/update/{asset_id}</cite> endpoint.</p>
 </section>
 <section id="comment-operations">
 <h2>Comment operations<a class="headerlink" href="#comment-operations" title="Link to this heading">¶</a></h2>
@@ -176,10 +156,6 @@ To perform the calculations for testing:
 <li><p><cite>operation_id</cite>: The id of the operation that the comment is associated with</p></li>
 <li><p><cite>id</cite>: The id of the comment</p></li>
 </ul>
-<p>There is also a <cite>delete_comment</cite>  endpoint, which deletes a comment from the comment database.</p>
-<p>Comments can be read in two ways:
-- Using the <cite>read_comments</cite> GET endpoint, which returns all comments in the comment database for a given operation id.
-- Using the <cite>read_operation</cite> GET endpoint, which returns the operation with the given id, including all comments.</p>
 </section>
 </section>
 
