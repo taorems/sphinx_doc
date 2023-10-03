@@ -22,7 +22,8 @@ The repo is structured as follows:
    :align: middle 
    :width: 100%
    :alt: Repository Structure
-   :caption: Repository Structure
+
+Repository Structure
 
 The text below is written using 'code-block' directive:
 
