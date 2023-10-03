@@ -108,6 +108,8 @@ You can use the ``lumache.test_doc()`` function:
 
 .. autofunction:: lumache.test_doc
 
+You can use the ``math_operations.test_doc()`` function:
+
 .. autofunction:: math_operations.test_doc
 
 The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
