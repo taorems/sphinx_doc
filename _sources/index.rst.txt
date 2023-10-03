@@ -23,7 +23,7 @@ Contents
    api 
    frontend
 
-This is a test site.
+This is a test site. The purpose of this site is to test the documentation of the web application and the autodocumentation of the code.
 
 Indices and tables
 ==================
