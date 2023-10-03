@@ -2,6 +2,17 @@
 
 
 class Calculator:
+    """
+    A class used to represent a calculator that performs basic arithmetic operations.
+
+    """
+    def __init__(self):
+        """
+        The constructor for Calculator class.
+
+        """
+        pass
+
     def add(self, x, y):
         """
         Perform addition of two numbers.
