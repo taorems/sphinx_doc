@@ -18,7 +18,8 @@ Code Structure
 
 The code is structured as follows:
 
-.. image:: _static/code_structure.png
+.. image:: /_static/code_structure.png
+   :align: center 
    :width: 100%
 
 .. code-block:: console
