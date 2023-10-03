@@ -1,4 +1,4 @@
-Jacking System Design Life
+Test Documentation
 ==========================
 
-**Jacking System Design Life** (JSDL) is an OSS web application for monitoring the design life of a jacking system.
+**Test Documentation** is an OSS web application for testing the autodoc feature.
