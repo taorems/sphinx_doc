@@ -6,11 +6,11 @@ Usage
 Installation
 ------------
 
-To use JSDL, first request access to the app on the MaxPortal:
+To use this project, first create a virtual environment and clone the repository:
 
 .. code-block:: console
 
-   (.venv) $ nx serve oss
+   (.venv) $ git clone repo_url
 
 Code Structure
 --------------
@@ -18,9 +18,23 @@ Code Structure
 
 The code is structured as follows:
 
+.. image:: _static/code_structure.png
+   :width: 100%
+
+.. code-block:: console
+
+   project_root/
+   ├── code/
+   │   ├── lumache.py
+   │   ├── other_python_files.py
+   ├── docs/
+   │   ├── build/
+   │   ├── source/
+   │   │   ├── conf.py
+
+
 You can use the calculator class to perform various operations on numbers.
 
-Sphinx supports documenting code objects in several languages, namely Python, C, C++, JavaScript, and reStructuredText. Each of them can be documented using a series of directives and roles grouped by domain.
 
 Here is a sample of test python code:
 
@@ -30,7 +44,7 @@ Creating recipes
 To retrieve a list of random ingredients,
 you can use the ``lumache.get_random_ingredients()`` function:
 
-This step is done by manual writing of the code documentation in the rst file.
+This step is done by manual writing of the code documentation in the rst file. The rst file is then converted to html using sphinx. Check the usage.rst file for the code documentation.
 
 .. py:function:: lumache.get_random_ingredients(kind=None)
 
@@ -55,9 +69,19 @@ will raise an exception.
 .. 3
 .. >>> import lumache
 
-This step is done by using the sphinx-autodoc extension.
+This step is done by using the sphinx-autodoc extension. The sphinx-autodoc extension is used to automatically extract docstrings from modules and classes and format them in a way readable by Sphinx. The important thing for this to work is that the path
+of the code should be added to the sys.path variable. This can be done by adding the following line to the conf.py file:
 
-you can use the ``lumache.test_doc()`` function:
+``sys.path.insert(0, os.path.abspath('../code'))``
+
+In the config file, there is also a system path as follows:
+
+``sys.path.insert(0, pathlib.Path(__file__).parents[1].resolve().as_posix())``
+
+
+Here is the segment of the test:
+
+You can use the ``lumache.test_doc()`` function:
 
 .. autofunction:: lumache.test_doc
 

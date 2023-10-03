@@ -3,10 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Jacking System Design Life's documentation!
+Welcome to Test's documentation!
 ======================================================
 
-**Jacking System Design Life** (JSDL) is an OSS web application for monitoring the design life of a jacking system. It is developed by the *OSS digital solutions* team.
+**Test** is a web application for testing the documentation of application. It is developed by the *A-team*.
 
 .. .. toctree::
 ..    :maxdepth: 2
@@ -34,4 +34,5 @@ Indices and tables
 
 .. note::
 
-   This documentation is built using `Sphinx <http://sphinx-doc.org/>`_ and `Read the Docs <https://readthedocs.org/>`_. The source code is hosted on GitHub. 
+   This documentation is built using `Sphinx <http://sphinx-doc.org/>`_ and `Read the Docs <https://readthedocs.org/>`_. The source code is hosted on GitHub.
+   Sphinx supports documenting code objects in several languages, namely Python, C, C++, JavaScript, and reStructuredText. Each of them can be documented using a series of directives and roles grouped by domain. 
