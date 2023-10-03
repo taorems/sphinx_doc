@@ -35,8 +35,13 @@ The text below is written using 'code-block' directive:
    │   ├── other_python_files.py
    ├── docs/
    │   ├── build/
+   |       ├── html/
    │   ├── source/
    │   │   ├── conf.py
+   |   |   ├── index.rst
+   |   |   ├── usage.rst
+   |   |   ├── quickstart.rst
+   |   |   ├── _static/
 
 
 Creating code documentation
