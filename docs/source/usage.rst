@@ -19,9 +19,10 @@ Repository Structure
 The repo is structured as follows:
 
 .. figure:: /_static/repo_structure.jpg
-   :align: center 
-   :width: 80%
+   :align: middle 
+   :width: 100%
    :alt: Repository Structure
+   :caption: Repository Structure
 
 The text below is written using 'code-block' directive:
 
