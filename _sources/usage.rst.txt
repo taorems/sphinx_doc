@@ -108,9 +108,9 @@ You can use the ``lumache.test_doc()`` function:
 
 .. autofunction:: lumache.test_doc
 
-You can use the ``math_operations.test_doc()`` function:
+You can use the ``math_operations.Calculator.add()`` function:
 
-.. autofunction:: math_operations.test_doc
+.. autofunction:: math_operations.Calculator.add
 
 The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
 or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
