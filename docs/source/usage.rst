@@ -22,6 +22,7 @@ The repo is structured as follows:
    :align: middle 
    :width: 100%
    :alt: Repository Structure
+...
 
 Repository Structure
 
