@@ -1,0 +1,35 @@
+﻿math\_operations
+================
+
+.. automodule:: math_operations
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      test_doc
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      Calculator
+   
+   
+
+   
+   
+   
+
+
+
