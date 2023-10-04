@@ -124,3 +124,10 @@ or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
 will raise an exception.
 
 .. autoexception:: lumache.InvalidKindError
+
+Here is a segment to test the automodule directive:
+
+.. automodule:: math_operations
+   :members:
+   .. :undoc-members:
+   .. :show-inheritance:

@@ -12,7 +12,7 @@ import pathlib
 import sys
 import os
 sys.path.insert(0, pathlib.Path(__file__).parents[1].resolve().as_posix())
-sys.path.insert(0, os.path.abspath('../code'))
+sys.path.insert(0, os.path.abspath('.../code'))
 
 project = 'Test Sphinx Generator'
 copyright = '2023, Sunny'
@@ -31,6 +31,7 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinx.ext.autosummary',
     'sphinx.ext.imgconverter',
+    'sphinx.ext.apidoc',
 ]
 
 templates_path = ['_templates']
