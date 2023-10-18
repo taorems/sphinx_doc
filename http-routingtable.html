@@ -142,133 +142,121 @@
    <h1>HTTP Routing Table</h1>
 
    <div class="modindex-jumpbox">
-   <a href="#cap-/api"><strong>/api</strong></a>
+   <a href="#cap-/pet"><strong>/pet</strong></a> | 
+   <a href="#cap-/store"><strong>/store</strong></a> | 
+   <a href="#cap-/user"><strong>/user</strong></a>
    </div>
 
    <table class="indextable modindextable">
      <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
-     <tr class="cap" id="cap-/api"><td></td><td>
-       <strong>/api</strong></td><td></td></tr>
+     <tr class="cap" id="cap-/pet"><td></td><td>
+       <strong>/pet</strong></td><td></td></tr>
      <tr>
        <td></td>
        <td>
-       <a href="api.html#get--api-v1-assets-"><code class="xref">GET /api/v1/assets/</code></a></td><td>
-       <em>Get Assets</em></td></tr>
+       <a href="api.html#get--pet-findByStatus"><code class="xref">GET /pet/findByStatus</code></a></td><td>
+       <em>Finds Pets by status</em></td></tr>
      <tr>
        <td></td>
        <td>
-       <a href="api.html#get--api-v1-assets-asset_id-get_operations"><code class="xref">GET /api/v1/assets/{asset_id}/get_operations</code></a></td><td>
-       <em>Get Operations In Asset</em></td></tr>
+       <a href="api.html#get--pet-findByTags"><code class="xref">GET /pet/findByTags</code></a></td><td>
+       <em>Finds Pets by tags</em></td></tr>
      <tr>
        <td></td>
        <td>
-       <a href="api.html#get--api-v1-assets-id"><code class="xref">GET /api/v1/assets/{id}</code></a></td><td>
-       <em>Get Asset</em></td></tr>
+       <a href="api.html#get--pet-petId"><code class="xref">GET /pet/{petId}</code></a></td><td>
+       <em>Find pet by ID</em></td></tr>
      <tr>
        <td></td>
        <td>
-       <a href="api.html#get--api-v1-dashboard-update-asset_id"><code class="xref">GET /api/v1/dashboard/update/{asset_id}</code></a></td><td>
-       <em>Update Asset</em></td></tr>
+       <a href="api.html#post--pet"><code class="xref">POST /pet</code></a></td><td>
+       <em>Add a new pet to the store</em></td></tr>
      <tr>
        <td></td>
        <td>
-       <a href="api.html#get--api-v1-logic-calculate_equivalent_distance-asset-asset_id"><code class="xref">GET /api/v1/logic/calculate_equivalent_distance/asset/{asset_id}</code></a></td><td>
-       <em>Calculate Equivalent Distance For Asset</em></td></tr>
+       <a href="api.html#post--pet-petId"><code class="xref">POST /pet/{petId}</code></a></td><td>
+       <em>Updates a pet in the store with form data</em></td></tr>
      <tr>
        <td></td>
        <td>
-       <a href="api.html#get--api-v1-logic-calculate_equivalent_distance-operation-operation_id"><code class="xref">GET /api/v1/logic/calculate_equivalent_distance/operation/{operation_id}</code></a></td><td>
-       <em>Calculate Equivalent Distance</em></td></tr>
+       <a href="api.html#post--pet-petId-uploadImage"><code class="xref">POST /pet/{petId}/uploadImage</code></a></td><td>
+       <em>uploads an image</em></td></tr>
      <tr>
        <td></td>
        <td>
-       <a href="api.html#get--api-v1-logic-calculate_total_damage-asset_id"><code class="xref">GET /api/v1/logic/calculate_total_damage/{asset_id}</code></a></td><td>
-       <em>Calculate Total Damage</em></td></tr>
+       <a href="api.html#put--pet"><code class="xref">PUT /pet</code></a></td><td>
+       <em>Update an existing pet</em></td></tr>
      <tr>
        <td></td>
        <td>
-       <a href="api.html#get--api-v1-operations-"><code class="xref">GET /api/v1/operations/</code></a></td><td>
-       <em>Read Operations</em></td></tr>
+       <a href="api.html#delete--pet-petId"><code class="xref">DELETE /pet/{petId}</code></a></td><td>
+       <em>Deletes a pet</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-/store"><td></td><td>
+       <strong>/store</strong></td><td></td></tr>
      <tr>
        <td></td>
        <td>
-       <a href="api.html#get--api-v1-operations-comment-create-schema"><code class="xref">GET /api/v1/operations/comment-create-schema</code></a></td><td>
-       <em>Get Comment Create Schema</em></td></tr>
+       <a href="api.html#get--store-inventory"><code class="xref">GET /store/inventory</code></a></td><td>
+       <em>Returns pet inventories by status</em></td></tr>
      <tr>
        <td></td>
        <td>
-       <a href="api.html#get--api-v1-operations-operation-create-schema"><code class="xref">GET /api/v1/operations/operation-create-schema</code></a></td><td>
-       <em>Get Operation Create Schema</em></td></tr>
+       <a href="api.html#get--store-order-orderId"><code class="xref">GET /store/order/{orderId}</code></a></td><td>
+       <em>Find purchase order by ID</em></td></tr>
      <tr>
        <td></td>
        <td>
-       <a href="api.html#get--api-v1-operations-operation_id"><code class="xref">GET /api/v1/operations/{operation_id}</code></a></td><td>
-       <em>Read Operation</em></td></tr>
+       <a href="api.html#post--store-order"><code class="xref">POST /store/order</code></a></td><td>
+       <em>Place an order for a pet</em></td></tr>
      <tr>
        <td></td>
        <td>
-       <a href="api.html#get--api-v1-operations-operation_id-comments"><code class="xref">GET /api/v1/operations/{operation_id}/comments</code></a></td><td>
-       <em>Read Comments</em></td></tr>
+       <a href="api.html#delete--store-order-orderId"><code class="xref">DELETE /store/order/{orderId}</code></a></td><td>
+       <em>Delete purchase order by ID</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-/user"><td></td><td>
+       <strong>/user</strong></td><td></td></tr>
      <tr>
        <td></td>
        <td>
-       <a href="api.html#post--api-v1-assets-"><code class="xref">POST /api/v1/assets/</code></a></td><td>
-       <em>Create Asset</em></td></tr>
+       <a href="api.html#get--user-login"><code class="xref">GET /user/login</code></a></td><td>
+       <em>Logs user into the system</em></td></tr>
      <tr>
        <td></td>
        <td>
-       <a href="api.html#post--api-v1-assets-upload_files"><code class="xref">POST /api/v1/assets/upload_files</code></a></td><td>
-       <em>Create Asset With Files</em></td></tr>
+       <a href="api.html#get--user-logout"><code class="xref">GET /user/logout</code></a></td><td>
+       <em>Logs out current logged in user session</em></td></tr>
      <tr>
        <td></td>
        <td>
-       <a href="api.html#post--api-v1-operations-"><code class="xref">POST /api/v1/operations/</code></a></td><td>
-       <em>Create Operation</em></td></tr>
+       <a href="api.html#get--user-username"><code class="xref">GET /user/{username}</code></a></td><td>
+       <em>Get user by user name</em></td></tr>
      <tr>
        <td></td>
        <td>
-       <a href="api.html#post--api-v1-operations-operations_from_json"><code class="xref">POST /api/v1/operations/operations_from_json</code></a></td><td>
-       <em>Create Multiple Operations</em></td></tr>
+       <a href="api.html#post--user"><code class="xref">POST /user</code></a></td><td>
+       <em>Create user</em></td></tr>
      <tr>
        <td></td>
        <td>
-       <a href="api.html#post--api-v1-operations-operations_from_json_file"><code class="xref">POST /api/v1/operations/operations_from_json_file</code></a></td><td>
-       <em>Create Multiple Operations From File</em></td></tr>
+       <a href="api.html#post--user-createWithArray"><code class="xref">POST /user/createWithArray</code></a></td><td>
+       <em>Creates list of users with given input array</em></td></tr>
      <tr>
        <td></td>
        <td>
-       <a href="api.html#post--api-v1-operations-operation_id-comment"><code class="xref">POST /api/v1/operations/{operation_id}/comment</code></a></td><td>
-       <em>Add Comment</em></td></tr>
+       <a href="api.html#post--user-createWithList"><code class="xref">POST /user/createWithList</code></a></td><td>
+       <em>Creates list of users with given input array</em></td></tr>
      <tr>
        <td></td>
        <td>
-       <a href="api.html#put--api-v1-logic-calculate_equivalent_distance-asset-asset_id"><code class="xref">PUT /api/v1/logic/calculate_equivalent_distance/asset/{asset_id}</code></a></td><td>
-       <em>Update Equivalent Distance For Asset</em></td></tr>
+       <a href="api.html#put--user-username"><code class="xref">PUT /user/{username}</code></a></td><td>
+       <em>Updated user</em></td></tr>
      <tr>
        <td></td>
        <td>
-       <a href="api.html#put--api-v1-logic-calculate_total_damage-asset-asset_id"><code class="xref">PUT /api/v1/logic/calculate_total_damage/asset/{asset_id}</code></a></td><td>
-       <em>Update Total Damage For Asset</em></td></tr>
-     <tr>
-       <td></td>
-       <td>
-       <a href="api.html#put--api-v1-operations-operation_id"><code class="xref">PUT /api/v1/operations/{operation_id}</code></a></td><td>
-       <em>Update Operation</em></td></tr>
-     <tr>
-       <td></td>
-       <td>
-       <a href="api.html#delete--api-v1-assets-asset_id"><code class="xref">DELETE /api/v1/assets/{asset_id}</code></a></td><td>
-       <em>Delete Asset</em></td></tr>
-     <tr>
-       <td></td>
-       <td>
-       <a href="api.html#delete--api-v1-operations-comments-comment_id"><code class="xref">DELETE /api/v1/operations/comments/{comment_id}</code></a></td><td>
-       <em>Delete Comment</em></td></tr>
-     <tr>
-       <td></td>
-       <td>
-       <a href="api.html#delete--api-v1-operations-operation_id"><code class="xref">DELETE /api/v1/operations/{operation_id}</code></a></td><td>
-       <em>Delete Operation</em></td></tr>
+       <a href="api.html#delete--user-username"><code class="xref">DELETE /user/{username}</code></a></td><td>
+       <em>Delete user</em></td></tr>
    </table>
 
 
