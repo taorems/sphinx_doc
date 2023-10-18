@@ -141,6 +141,438 @@
   <section id="api">
 <h1>API<a class="headerlink" href="#api" title="Link to this heading">¶</a></h1>
 <p>This is an API for testing the documentation using a sample code. It is built using Python and PostgresSQL. It is a RESTful API that allows users to create, read, update, and delete operations, as well as perform calculations on the data.</p>
+<dl class="http get">
+<dt class="sig sig-object http" id="get--api-v1-operations-operation-create-schema">
+<span class="sig-name descname"><span class="pre">GET</span> </span><span class="sig-name descname"><span class="pre">/api/v1/operations/operation-create-schema</span></span><a class="headerlink" href="#get--api-v1-operations-operation-create-schema" title="Link to this definition">¶</a></dt>
+<dd><p><strong>Get Operation Create Schema</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Status Codes<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><span><a class="reference external" href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1">200 OK</a></span> – Successful Response</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="http get">
+<dt class="sig sig-object http" id="get--api-v1-operations-comment-create-schema">
+<span class="sig-name descname"><span class="pre">GET</span> </span><span class="sig-name descname"><span class="pre">/api/v1/operations/comment-create-schema</span></span><a class="headerlink" href="#get--api-v1-operations-comment-create-schema" title="Link to this definition">¶</a></dt>
+<dd><p><strong>Get Comment Create Schema</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Status Codes<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><span><a class="reference external" href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1">200 OK</a></span> – Successful Response</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="http post">
+<dt class="sig sig-object http" id="post--api-v1-operations-">
+<span class="sig-name descname"><span class="pre">POST</span> </span><span class="sig-name descname"><span class="pre">/api/v1/operations/</span></span><a class="headerlink" href="#post--api-v1-operations-" title="Link to this definition">¶</a></dt>
+<dd><p><strong>Create Operation</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Status Codes<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><span><a class="reference external" href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.2">201 Created</a></span> – Successful Response</p></li>
+<li><p><span><a class="reference external" href="https://www.rfc-editor.org/rfc/rfc4918#section-11.2">422 Unprocessable Entity</a></span> – Validation Error</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="http get">
+<dt class="sig sig-object http" id="get--api-v1-operations-">
+<span class="sig-name descname"><span class="pre">GET</span> </span><span class="sig-name descname"><span class="pre">/api/v1/operations/</span></span><a class="headerlink" href="#get--api-v1-operations-" title="Link to this definition">¶</a></dt>
+<dd><p><strong>Read Operations</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Query Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>skip</strong> (<em>integer</em>) – </p></li>
+<li><p><strong>limit</strong> (<em>integer</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Status Codes<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><span><a class="reference external" href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1">200 OK</a></span> – Successful Response</p></li>
+<li><p><span><a class="reference external" href="https://www.rfc-editor.org/rfc/rfc4918#section-11.2">422 Unprocessable Entity</a></span> – Validation Error</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="http get">
+<dt class="sig sig-object http" id="get--api-v1-operations-operation_id">
+<span class="sig-name descname"><span class="pre">GET</span> </span><span class="sig-name descname"><span class="pre">/api/v1/operations/{operation_id}</span></span><a class="headerlink" href="#get--api-v1-operations-operation_id" title="Link to this definition">¶</a></dt>
+<dd><p><strong>Read Operation</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>operation_id</strong> (<em>integer</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Status Codes<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><span><a class="reference external" href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1">200 OK</a></span> – Successful Response</p></li>
+<li><p><span><a class="reference external" href="https://www.rfc-editor.org/rfc/rfc4918#section-11.2">422 Unprocessable Entity</a></span> – Validation Error</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="http delete">
+<dt class="sig sig-object http" id="delete--api-v1-operations-operation_id">
+<span class="sig-name descname"><span class="pre">DELETE</span> </span><span class="sig-name descname"><span class="pre">/api/v1/operations/{operation_id}</span></span><a class="headerlink" href="#delete--api-v1-operations-operation_id" title="Link to this definition">¶</a></dt>
+<dd><p><strong>Delete Operation</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>operation_id</strong> (<em>integer</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Status Codes<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><span><a class="reference external" href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.5">204 No Content</a></span> – Successful Response</p></li>
+<li><p><span><a class="reference external" href="https://www.rfc-editor.org/rfc/rfc4918#section-11.2">422 Unprocessable Entity</a></span> – Validation Error</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="http put">
+<dt class="sig sig-object http" id="put--api-v1-operations-operation_id">
+<span class="sig-name descname"><span class="pre">PUT</span> </span><span class="sig-name descname"><span class="pre">/api/v1/operations/{operation_id}</span></span><a class="headerlink" href="#put--api-v1-operations-operation_id" title="Link to this definition">¶</a></dt>
+<dd><p><strong>Update Operation</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>operation_id</strong> (<em>integer</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Status Codes<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><span><a class="reference external" href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1">200 OK</a></span> – Successful Response</p></li>
+<li><p><span><a class="reference external" href="https://www.rfc-editor.org/rfc/rfc4918#section-11.2">422 Unprocessable Entity</a></span> – Validation Error</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="http get">
+<dt class="sig sig-object http" id="get--api-v1-operations-operation_id-comments">
+<span class="sig-name descname"><span class="pre">GET</span> </span><span class="sig-name descname"><span class="pre">/api/v1/operations/{operation_id}/comments</span></span><a class="headerlink" href="#get--api-v1-operations-operation_id-comments" title="Link to this definition">¶</a></dt>
+<dd><p><strong>Read Comments</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>operation_id</strong> (<em>integer</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Status Codes<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><span><a class="reference external" href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1">200 OK</a></span> – Successful Response</p></li>
+<li><p><span><a class="reference external" href="https://www.rfc-editor.org/rfc/rfc4918#section-11.2">422 Unprocessable Entity</a></span> – Validation Error</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="http post">
+<dt class="sig sig-object http" id="post--api-v1-operations-operation_id-comment">
+<span class="sig-name descname"><span class="pre">POST</span> </span><span class="sig-name descname"><span class="pre">/api/v1/operations/{operation_id}/comment</span></span><a class="headerlink" href="#post--api-v1-operations-operation_id-comment" title="Link to this definition">¶</a></dt>
+<dd><p><strong>Add Comment</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Status Codes<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><span><a class="reference external" href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1">200 OK</a></span> – Successful Response</p></li>
+<li><p><span><a class="reference external" href="https://www.rfc-editor.org/rfc/rfc4918#section-11.2">422 Unprocessable Entity</a></span> – Validation Error</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="http delete">
+<dt class="sig sig-object http" id="delete--api-v1-operations-comments-comment_id">
+<span class="sig-name descname"><span class="pre">DELETE</span> </span><span class="sig-name descname"><span class="pre">/api/v1/operations/comments/{comment_id}</span></span><a class="headerlink" href="#delete--api-v1-operations-comments-comment_id" title="Link to this definition">¶</a></dt>
+<dd><p><strong>Delete Comment</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>comment_id</strong> (<em>integer</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Status Codes<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><span><a class="reference external" href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1">200 OK</a></span> – Successful Response</p></li>
+<li><p><span><a class="reference external" href="https://www.rfc-editor.org/rfc/rfc4918#section-11.2">422 Unprocessable Entity</a></span> – Validation Error</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="http post">
+<dt class="sig sig-object http" id="post--api-v1-operations-operations_from_json">
+<span class="sig-name descname"><span class="pre">POST</span> </span><span class="sig-name descname"><span class="pre">/api/v1/operations/operations_from_json</span></span><a class="headerlink" href="#post--api-v1-operations-operations_from_json" title="Link to this definition">¶</a></dt>
+<dd><p><strong>Create Multiple Operations</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Status Codes<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><span><a class="reference external" href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.2">201 Created</a></span> – Successful Response</p></li>
+<li><p><span><a class="reference external" href="https://www.rfc-editor.org/rfc/rfc4918#section-11.2">422 Unprocessable Entity</a></span> – Validation Error</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="http post">
+<dt class="sig sig-object http" id="post--api-v1-operations-operations_from_json_file">
+<span class="sig-name descname"><span class="pre">POST</span> </span><span class="sig-name descname"><span class="pre">/api/v1/operations/operations_from_json_file</span></span><a class="headerlink" href="#post--api-v1-operations-operations_from_json_file" title="Link to this definition">¶</a></dt>
+<dd><p><strong>Create Multiple Operations From File</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Query Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>asset_id</strong> (<em>integer</em>) – (Required)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Status Codes<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><span><a class="reference external" href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.2">201 Created</a></span> – Successful Response</p></li>
+<li><p><span><a class="reference external" href="https://www.rfc-editor.org/rfc/rfc4918#section-11.2">422 Unprocessable Entity</a></span> – Validation Error</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="http post">
+<dt class="sig sig-object http" id="post--api-v1-assets-">
+<span class="sig-name descname"><span class="pre">POST</span> </span><span class="sig-name descname"><span class="pre">/api/v1/assets/</span></span><a class="headerlink" href="#post--api-v1-assets-" title="Link to this definition">¶</a></dt>
+<dd><p><strong>Create Asset</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Status Codes<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><span><a class="reference external" href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.2">201 Created</a></span> – Successful Response</p></li>
+<li><p><span><a class="reference external" href="https://www.rfc-editor.org/rfc/rfc4918#section-11.2">422 Unprocessable Entity</a></span> – Validation Error</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="http get">
+<dt class="sig sig-object http" id="get--api-v1-assets-">
+<span class="sig-name descname"><span class="pre">GET</span> </span><span class="sig-name descname"><span class="pre">/api/v1/assets/</span></span><a class="headerlink" href="#get--api-v1-assets-" title="Link to this definition">¶</a></dt>
+<dd><p><strong>Get Assets</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Query Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>skip</strong> (<em>integer</em>) – </p></li>
+<li><p><strong>limit</strong> (<em>integer</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Status Codes<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><span><a class="reference external" href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1">200 OK</a></span> – Successful Response</p></li>
+<li><p><span><a class="reference external" href="https://www.rfc-editor.org/rfc/rfc4918#section-11.2">422 Unprocessable Entity</a></span> – Validation Error</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="http post">
+<dt class="sig sig-object http" id="post--api-v1-assets-upload_files">
+<span class="sig-name descname"><span class="pre">POST</span> </span><span class="sig-name descname"><span class="pre">/api/v1/assets/upload_files</span></span><a class="headerlink" href="#post--api-v1-assets-upload_files" title="Link to this definition">¶</a></dt>
+<dd><p><strong>Create Asset With Files</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Query Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>asset_name</strong> (<em>string</em>) – (Required)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Status Codes<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><span><a class="reference external" href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.2">201 Created</a></span> – Successful Response</p></li>
+<li><p><span><a class="reference external" href="https://www.rfc-editor.org/rfc/rfc4918#section-11.2">422 Unprocessable Entity</a></span> – Validation Error</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="http delete">
+<dt class="sig sig-object http" id="delete--api-v1-assets-asset_id">
+<span class="sig-name descname"><span class="pre">DELETE</span> </span><span class="sig-name descname"><span class="pre">/api/v1/assets/{asset_id}</span></span><a class="headerlink" href="#delete--api-v1-assets-asset_id" title="Link to this definition">¶</a></dt>
+<dd><p><strong>Delete Asset</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>asset_id</strong> (<em>integer</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Status Codes<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><span><a class="reference external" href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.5">204 No Content</a></span> – Successful Response</p></li>
+<li><p><span><a class="reference external" href="https://www.rfc-editor.org/rfc/rfc4918#section-11.2">422 Unprocessable Entity</a></span> – Validation Error</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="http get">
+<dt class="sig sig-object http" id="get--api-v1-assets-asset_id-get_operations">
+<span class="sig-name descname"><span class="pre">GET</span> </span><span class="sig-name descname"><span class="pre">/api/v1/assets/{asset_id}/get_operations</span></span><a class="headerlink" href="#get--api-v1-assets-asset_id-get_operations" title="Link to this definition">¶</a></dt>
+<dd><p><strong>Get Operations In Asset</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>asset_id</strong> (<em>integer</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Query Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>skip</strong> (<em>integer</em>) – </p></li>
+<li><p><strong>limit</strong> (<em>integer</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-odd">Status Codes<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><span><a class="reference external" href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1">200 OK</a></span> – Successful Response</p></li>
+<li><p><span><a class="reference external" href="https://www.rfc-editor.org/rfc/rfc4918#section-11.2">422 Unprocessable Entity</a></span> – Validation Error</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="http get">
+<dt class="sig sig-object http" id="get--api-v1-assets-id">
+<span class="sig-name descname"><span class="pre">GET</span> </span><span class="sig-name descname"><span class="pre">/api/v1/assets/{id}</span></span><a class="headerlink" href="#get--api-v1-assets-id" title="Link to this definition">¶</a></dt>
+<dd><p><strong>Get Asset</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>id</strong> (<em>integer</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Status Codes<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><span><a class="reference external" href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1">200 OK</a></span> – Successful Response</p></li>
+<li><p><span><a class="reference external" href="https://www.rfc-editor.org/rfc/rfc4918#section-11.2">422 Unprocessable Entity</a></span> – Validation Error</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="http get">
+<dt class="sig sig-object http" id="get--api-v1-logic-calculate_equivalent_distance-operation-operation_id">
+<span class="sig-name descname"><span class="pre">GET</span> </span><span class="sig-name descname"><span class="pre">/api/v1/logic/calculate_equivalent_distance/operation/{operation_id}</span></span><a class="headerlink" href="#get--api-v1-logic-calculate_equivalent_distance-operation-operation_id" title="Link to this definition">¶</a></dt>
+<dd><p><strong>Calculate Equivalent Distance</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>operation_id</strong> (<em>integer</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Status Codes<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><span><a class="reference external" href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1">200 OK</a></span> – Successful Response</p></li>
+<li><p><span><a class="reference external" href="https://www.rfc-editor.org/rfc/rfc4918#section-11.2">422 Unprocessable Entity</a></span> – Validation Error</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="http get">
+<dt class="sig sig-object http" id="get--api-v1-logic-calculate_equivalent_distance-asset-asset_id">
+<span class="sig-name descname"><span class="pre">GET</span> </span><span class="sig-name descname"><span class="pre">/api/v1/logic/calculate_equivalent_distance/asset/{asset_id}</span></span><a class="headerlink" href="#get--api-v1-logic-calculate_equivalent_distance-asset-asset_id" title="Link to this definition">¶</a></dt>
+<dd><p><strong>Calculate Equivalent Distance For Asset</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>asset_id</strong> (<em>integer</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Status Codes<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><span><a class="reference external" href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1">200 OK</a></span> – Successful Response</p></li>
+<li><p><span><a class="reference external" href="https://www.rfc-editor.org/rfc/rfc4918#section-11.2">422 Unprocessable Entity</a></span> – Validation Error</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="http put">
+<dt class="sig sig-object http" id="put--api-v1-logic-calculate_equivalent_distance-asset-asset_id">
+<span class="sig-name descname"><span class="pre">PUT</span> </span><span class="sig-name descname"><span class="pre">/api/v1/logic/calculate_equivalent_distance/asset/{asset_id}</span></span><a class="headerlink" href="#put--api-v1-logic-calculate_equivalent_distance-asset-asset_id" title="Link to this definition">¶</a></dt>
+<dd><p><strong>Update Equivalent Distance For Asset</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>asset_id</strong> (<em>integer</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Status Codes<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><span><a class="reference external" href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1">200 OK</a></span> – Successful Response</p></li>
+<li><p><span><a class="reference external" href="https://www.rfc-editor.org/rfc/rfc4918#section-11.2">422 Unprocessable Entity</a></span> – Validation Error</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="http get">
+<dt class="sig sig-object http" id="get--api-v1-logic-calculate_total_damage-asset_id">
+<span class="sig-name descname"><span class="pre">GET</span> </span><span class="sig-name descname"><span class="pre">/api/v1/logic/calculate_total_damage/{asset_id}</span></span><a class="headerlink" href="#get--api-v1-logic-calculate_total_damage-asset_id" title="Link to this definition">¶</a></dt>
+<dd><p><strong>Calculate Total Damage</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>asset_id</strong> (<em>integer</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Status Codes<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><span><a class="reference external" href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1">200 OK</a></span> – Successful Response</p></li>
+<li><p><span><a class="reference external" href="https://www.rfc-editor.org/rfc/rfc4918#section-11.2">422 Unprocessable Entity</a></span> – Validation Error</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="http put">
+<dt class="sig sig-object http" id="put--api-v1-logic-calculate_total_damage-asset-asset_id">
+<span class="sig-name descname"><span class="pre">PUT</span> </span><span class="sig-name descname"><span class="pre">/api/v1/logic/calculate_total_damage/asset/{asset_id}</span></span><a class="headerlink" href="#put--api-v1-logic-calculate_total_damage-asset-asset_id" title="Link to this definition">¶</a></dt>
+<dd><p><strong>Update Total Damage For Asset</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>asset_id</strong> (<em>integer</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Status Codes<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><span><a class="reference external" href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1">200 OK</a></span> – Successful Response</p></li>
+<li><p><span><a class="reference external" href="https://www.rfc-editor.org/rfc/rfc4918#section-11.2">422 Unprocessable Entity</a></span> – Validation Error</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="http get">
+<dt class="sig sig-object http" id="get--api-v1-dashboard-update-asset_id">
+<span class="sig-name descname"><span class="pre">GET</span> </span><span class="sig-name descname"><span class="pre">/api/v1/dashboard/update/{asset_id}</span></span><a class="headerlink" href="#get--api-v1-dashboard-update-asset_id" title="Link to this definition">¶</a></dt>
+<dd><p><strong>Update Asset</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>asset_id</strong> (<em>integer</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Status Codes<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><span><a class="reference external" href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1">200 OK</a></span> – Successful Response</p></li>
+<li><p><span><a class="reference external" href="https://www.rfc-editor.org/rfc/rfc4918#section-11.2">422 Unprocessable Entity</a></span> – Validation Error</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
 <table class="autosummary longtable docutils align-default">
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="generated/lumache.html#module-lumache" title="lumache"><code class="xref py py-obj docutils literal notranslate"><span class="pre">lumache</span></code></a></p></td>
