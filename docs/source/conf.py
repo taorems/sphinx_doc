@@ -34,6 +34,7 @@ extensions = [
     'sphinx.ext.imgconverter',
     'sphinx.ext.apidoc',
     'sphinxcontrib-openapi',
+    'sphinxcontrib-httpdomain',
 ]
 
 templates_path = ['_templates']
