@@ -1,2 +1,4 @@
 piccolo_theme
+furo
+sphinx-rtd-theme
 sphinxcontrib-openapi

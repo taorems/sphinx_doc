@@ -48,7 +48,7 @@ exclude_patterns = []
 # html_logo = '_static/logo.png'
 # html_logo = 'https://www.nov.com/-/media/Project/NOV/NOV-Brands/GustoMSC/Logo/GustoMS'
 # pygments_style = 'stata-dark'
-html_theme = 'piccolo_theme'
+html_theme = 'furo'
 html_theme_options = {
     "dark_mode_code_blocks": True,
 }
