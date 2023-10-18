@@ -33,6 +33,7 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx.ext.imgconverter',
     'sphinx.ext.apidoc',
+    'sphinxcontrib-openapi',
 ]
 
 templates_path = ['_templates']
