@@ -1,3 +1,4 @@
+pbr
 piccolo_theme
 furo
 sphinx-rtd-theme
