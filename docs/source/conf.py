@@ -34,7 +34,9 @@ extensions = [
     'sphinx.ext.imgconverter',
     'sphinx.ext.apidoc',
     'sphinxcontrib.openapi',
-    'sphinxcontrib.httpdomain',
+    'sphinxcontrib.httpdomain'
+    'sphinxcontrib.swaggerui',
+    'swagger_plugin_for_sphinx',
 ]
 
 templates_path = ['_templates']

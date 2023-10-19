@@ -6,8 +6,12 @@ This is an API for testing the documentation using a sample code. It is built us
 .. openapi:: ./petstore.json
 
 
-.. autosummary::
-    :toctree: generated
+.. swaggerui:: ./_static/swaggerui/petstore.json
+    :url:: https://unpkg.com/swagger-ui-dist@3/swagger-ui-bundle.js 
+    :css: ./_static/swaggerui/swagger-ui.css    
 
-    lumache
-    math_operations
+.. .. autosummary::
+..     :toctree: generated
+
+..     lumache
+..     math_operations
