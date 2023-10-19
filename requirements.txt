@@ -3,3 +3,4 @@ furo
 sphinx-rtd-theme
 sphinxcontrib-openapi
 sphinxcontrib-swaggerui
+swagger-plugin-for-sphinx
