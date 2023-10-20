@@ -11,8 +11,6 @@
 import pathlib
 import sys
 import os
-import apps.code as code
-import apps.crud as crud
 
 
 sys.path.insert(0, pathlib.Path(__file__).parents[2].resolve().as_posix())
