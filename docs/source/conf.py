@@ -11,6 +11,10 @@
 import pathlib
 import sys
 import os
+import apps.code as code
+import apps.crud as crud
+
+
 sys.path.insert(0, pathlib.Path(__file__).parents[2].resolve().as_posix())
 sys.path.insert(0, os.path.abspath('home/runner/work/sphinx_doc/sphinx_doc/apps/code'))
 # sys.path.insert(0, os.path.abspath('../code'))
