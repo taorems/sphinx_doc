@@ -208,14 +208,14 @@
 <figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="_images/repo_structure.jpg"><img alt="_images/repo_structure.jpg" src="_images/repo_structure.jpg" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-text">Repository Structure</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+<p><span class="caption-text">Fig: Repository Structure</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The text below is written using ‘code-block’ directive:</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>project_root/
-├── code/
-│   ├── lumache.py
-│   ├── other_python_files.py
+├── apps/
+│   ├── code/
+│        ├── python_files.py
 ├── docs/
 │   ├── build/
 |       ├── html/
@@ -230,7 +230,7 @@
 </section>
 <section id="creating-code-documentation">
 <h2>Creating code documentation<a class="headerlink" href="#creating-code-documentation" title="Link to this heading">#</a></h2>
-<p>Here is a sample of test python code:</p>
+<p>This section elaborates on how to autodocument code. Here is a sample of test python code for lumache.py and math_operations.py:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">test_doc</span><span class="p">():</span>
 <span class="w">   </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">   Return a list of random ingredients as strings.</span>
@@ -249,10 +249,93 @@
    <span class="k">pass</span>
 </pre></div>
 </div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Calculator</span><span class="p">:</span>
+<span class="w"> </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd"> A class used to represent a calculator that performs basic arithmetic operations.</span>
+
+<span class="sd"> &quot;&quot;&quot;</span>
+ <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">     </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">     The constructor for Calculator class.</span>
+
+<span class="sd">     &quot;&quot;&quot;</span>
+     <span class="k">pass</span>
+
+ <span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+<span class="w">     </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">     Perform addition of two numbers.</span>
+
+<span class="sd">     Args:</span>
+<span class="sd">         x (float or int): The first number.</span>
+<span class="sd">         y (float or int): The second number.</span>
+
+<span class="sd">     Returns:</span>
+<span class="sd">         float or int: The result of the addition operation.</span>
+<span class="sd">     &quot;&quot;&quot;</span>
+     <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+
+ <span class="k">def</span> <span class="nf">subtract</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+<span class="w">     </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">     Perform subtraction of two numbers.</span>
+
+<span class="sd">     Args:</span>
+<span class="sd">         x (float or int): The first number.</span>
+<span class="sd">         y (float or int): The second number.</span>
+
+<span class="sd">     Returns:</span>
+<span class="sd">         float or int: The result of the subtraction operation.</span>
+<span class="sd">     &quot;&quot;&quot;</span>
+     <span class="k">return</span> <span class="n">x</span> <span class="o">-</span> <span class="n">y</span>
+
+ <span class="k">def</span> <span class="nf">multiply</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+<span class="w">     </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">     Perform multiplication of two numbers.</span>
+
+<span class="sd">     Args:</span>
+<span class="sd">         x (float or int): The first number.</span>
+<span class="sd">         y (float or int): The second number.</span>
+
+<span class="sd">     Returns:</span>
+<span class="sd">         float or int: The result of the multiplication operation.</span>
+<span class="sd">     &quot;&quot;&quot;</span>
+     <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">y</span>
+
+ <span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+<span class="w">     </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">     Perform division of two numbers.</span>
+
+<span class="sd">     Args:</span>
+<span class="sd">         x (float or int): The numerator.</span>
+<span class="sd">         y (float or int): The denominator.</span>
+
+<span class="sd">     Returns:</span>
+<span class="sd">         float or str: The result of the division operation. If division by zero occurs, returns &quot;Cannot divide by zero.&quot;</span>
+<span class="sd">     &quot;&quot;&quot;</span>
+     <span class="k">if</span> <span class="n">y</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+         <span class="k">return</span> <span class="s2">&quot;Cannot divide by zero&quot;</span>
+     <span class="k">return</span> <span class="n">x</span> <span class="o">/</span> <span class="n">y</span>
+
+<span class="k">def</span> <span class="nf">test_doc</span><span class="p">():</span>
+<span class="w">   </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">   Return a list of random ingredients as strings.</span>
+
+<span class="sd">   :param kind: Optional &quot;kind&quot; of ingredients.</span>
+<span class="sd">   :type kind: list[str] or None</span>
+<span class="sd">   :raise lumache.InvalidKindError: If the kind is invalid.</span>
+<span class="sd">   :return: The ingredients list.</span>
+<span class="sd">   :rtype: list[str]</span>
+
+<span class="sd">   &quot;&quot;&quot;</span>
+   <span class="k">return</span> <span class="p">[</span><span class="s2">&quot;easy, peasy, lemon, squeezy&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This section is done by manual writing of the code documentation in the rst file. The rst file is then converted to html using sphinx. Check the usage.rst file for the code documentation.</p>
+<p>The documentation is split in 2 categories. First, using manual writing of the code documentation in the rst file. Second, using the sphinx-autodoc extension.</p>
 </div>
+<section id="manual-approach">
+<h3>Manual approach<a class="headerlink" href="#manual-approach" title="Link to this heading">#</a></h3>
+<p>This section is done by manual writing of the code documentation in the rst file. The rst file is then converted to html using sphinx. Check the usage.rst file for the code documentation.</p>
 <p>To retrieve a list of random ingredients,
 you can use the <code class="docutils literal notranslate"><span class="pre">lumache.get_random_ingredients()</span></code> function:</p>
 <dl class="py function">
@@ -264,7 +347,7 @@ you can use the <code class="docutils literal notranslate"><span class="pre">lum
 <dd class="field-odd"><p><strong>kind</strong> (<em>list</em><em>[</em><em>str</em><em>] or </em><em>None</em>) – Optional “kind” of ingredients.</p>
 </dd>
 <dt class="field-even">Raises<span class="colon">:</span></dt>
-<dd class="field-even"><p><a class="reference internal" href="#id0" title="lumache.InvalidKindError"><strong>lumache.InvalidKindError</strong></a> – If the kind is invalid.</p>
+<dd class="field-even"><p><a class="reference internal" href="#lumache.InvalidKindError" title="lumache.InvalidKindError"><strong>lumache.InvalidKindError</strong></a> – If the kind is invalid.</p>
 </dd>
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>The ingredients list.</p>
@@ -284,62 +367,25 @@ will raise an exception.</p>
 <dd><p>Raised if the kind is invalid.</p>
 </dd></dl>
 
+</section>
+<section id="using-sphinx-autodoc-extension">
+<h3>Using sphinx-autodoc extension<a class="headerlink" href="#using-sphinx-autodoc-extension" title="Link to this heading">#</a></h3>
+<p>The steps below are done by using the sphinx-autodoc extension. The sphinx-autodoc extension is used to automatically extract docstrings from modules and classes and format them in a way readable by Sphinx.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The steps below are done by using the sphinx-autodoc extension. The sphinx-autodoc extension is used to automatically extract docstrings from modules and classes and format them in a way readable by Sphinx. The important thing for this to work is that the path
-of the code should be added to the sys.path variable. This can be done by adding the following line to the conf.py file:</p>
+<p>The important thing for this to work is that the path of the code should be added to the sys.path variable. This can be done by adding the following line to the conf.py file:</p>
 <p><code class="docutils literal notranslate"><span class="pre">sys.path.insert(0,</span> <span class="pre">os.path.abspath('../code'))</span></code></p>
 <p>In the config file, there is also a system path as follows:</p>
 <p><code class="docutils literal notranslate"><span class="pre">sys.path.insert(0,</span> <span class="pre">pathlib.Path(__file__).parents[1].resolve().as_posix())</span></code></p>
+<p>This is used to add the path of the code to the sys.path variable. This is done to be able to import the modules in the doc directory. Here, ‘.parents[2]’ navigates up two levels in the directory hierarchy. parents[0] would represent the directory containing the current file, parents[1] would represent its parent directory, and parents[2] would represent its grandparent directory.</p>
 </div>
 <p>Here is the segment of the test:</p>
-<p>You can use the <code class="docutils literal notranslate"><span class="pre">lumache.test_doc()</span></code> function:</p>
-<dl class="py function">
-<dt class="sig sig-object py" id="lumache.test_doc">
-<span class="sig-prename descclassname"><span class="pre">lumache.</span></span><span class="sig-name descname"><span class="pre">test_doc</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#lumache.test_doc" title="Link to this definition">#</a></dt>
-<dd><blockquote>
-<div><p>Return a list of random ingredients as strings.</p>
-</div></blockquote>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>kind</strong> (<em>list</em><em>[</em><em>str</em><em>] or </em><em>None</em>) – Optional “kind” of ingredients.</p>
-</dd>
-<dt class="field-even">Raises<span class="colon">:</span></dt>
-<dd class="field-even"><p><a class="reference internal" href="#id0" title="lumache.InvalidKindError"><strong>lumache.InvalidKindError</strong></a> – If the kind is invalid.</p>
-</dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p>The ingredients list.</p>
-</dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p>list[str]</p>
-</dd>
-</dl>
-</dd></dl>
-
-<p>You can use the <code class="docutils literal notranslate"><span class="pre">math_operations.Calculator.add()</span></code> function:</p>
-<dl class="py function">
-<dt class="sig sig-object py" id="math_operations.Calculator.add">
-<span class="sig-prename descclassname"><span class="pre">math_operations.Calculator.</span></span><span class="sig-name descname"><span class="pre">add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#math_operations.Calculator.add" title="Link to this definition">#</a></dt>
-<dd><p>Perform addition of two numbers.</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>x (float or int): The first number.
-y (float or int): The second number.</p>
-</dd>
-<dt>Returns:</dt><dd><p>float or int: The result of the addition operation.</p>
-</dd>
-</dl>
-</dd></dl>
-
+<p>You can type this line <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">autofuntion::</span> <span class="pre">lumache.test_doc</span></code> to generate the documentation for the <code class="docutils literal notranslate"><span class="pre">lumache.test_doc()</span></code> function.</p>
+<p>The same approach can be applied for the <code class="docutils literal notranslate"><span class="pre">math_operations.Calculator.add()</span></code> function, which then generates the documentation for the <code class="docutils literal notranslate"><span class="pre">math_operations.Calculator.add()</span></code> function:</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">kind</span></code> parameter should be either <code class="docutils literal notranslate"><span class="pre">&quot;meat&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;fish&quot;</span></code>,
 or <code class="docutils literal notranslate"><span class="pre">&quot;veggies&quot;</span></code>. Otherwise, <a class="reference internal" href="#lumache.get_random_ingredients" title="lumache.get_random_ingredients"><code class="xref py py-func docutils literal notranslate"><span class="pre">lumache.get_random_ingredients()</span></code></a>
 will raise an exception.</p>
-<dl class="py exception">
-<dt class="sig sig-object py" id="id0">
-<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lumache.</span></span><span class="sig-name descname"><span class="pre">InvalidKindError</span></span><a class="headerlink" href="#id0" title="Link to this definition">#</a></dt>
-<dd><p>Raised if the kind is invalid.</p>
-</dd></dl>
-
-<p>Here is a segment to test the automodule directive:</p>
+</section>
 </section>
 </section>
 
@@ -402,11 +448,12 @@ will raise an exception.</p>
 <li><a class="reference internal" href="#installation">Installation</a></li>
 <li><a class="reference internal" href="#repository-structure">Repository Structure</a></li>
 <li><a class="reference internal" href="#creating-code-documentation">Creating code documentation</a><ul>
+<li><a class="reference internal" href="#manual-approach">Manual approach</a><ul>
 <li><a class="reference internal" href="#lumache.get_random_ingredients"><code class="docutils literal notranslate"><span class="pre">lumache.get_random_ingredients()</span></code></a></li>
 <li><a class="reference internal" href="#lumache.InvalidKindError"><code class="docutils literal notranslate"><span class="pre">lumache.InvalidKindError</span></code></a></li>
-<li><a class="reference internal" href="#lumache.test_doc"><code class="docutils literal notranslate"><span class="pre">test_doc()</span></code></a></li>
-<li><a class="reference internal" href="#math_operations.Calculator.add"><code class="docutils literal notranslate"><span class="pre">add()</span></code></a></li>
-<li><a class="reference internal" href="#id0"><code class="docutils literal notranslate"><span class="pre">InvalidKindError</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#using-sphinx-autodoc-extension">Using sphinx-autodoc extension</a></li>
 </ul>
 </li>
 </ul>

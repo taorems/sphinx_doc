@@ -8,9 +8,6 @@ Welcome to Test's documentation!
 
 **Test** is a web application for testing the documentation of application. It is developed by the *A-team*.
 
-.. .. toctree::
-..    :maxdepth: 2
-   .. :caption: Contents:
 
 Contents
 --------
