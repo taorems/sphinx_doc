@@ -13,12 +13,20 @@ Contents
 --------
 
 .. toctree::
-   .. :maxdepth: 2
+   :maxdepth: 2
+   :caption: JSDL Documentation
 
-   quickstart
-   usage
-   api 
-   frontend
+   JSDL/quickstart
+   JSDL/usage
+   JSDL/api 
+   JSDL/frontend
+
+.. toctree::
+   :maxdepth: 2
+   :caption: App-2 Documentation
+
+   app-2/quickstart
+
 
 This is a test site. The purpose of this site is to test the documentation of the web application and the autodocumentation of the code.
 

@@ -28,11 +28,14 @@ The repo is structured as follows:
 The text below is written using 'code-block' directive:
 
 .. code-block:: text
-
+    
    project_root/
-   ├── apps/
+   ├── app-1/
    │   ├── code/
    │        ├── python_files.py
+   ├── app-2/
+   │   ├── code/
+   |        ├── python_files.py
    ├── docs/
    │   ├── build/
    |       ├── html/
