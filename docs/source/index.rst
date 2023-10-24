@@ -14,12 +14,12 @@ Contents
 
 .. toctree::
    :maxdepth: 2
-   :caption: JSDL Documentation
+   :caption: app-1 Documentation
 
-   JSDL/quickstart
-   JSDL/usage
-   JSDL/api 
-   JSDL/frontend
+   app-1/quickstart
+   app-1/usage
+   app-1/api 
+   app-1/frontend
 
 .. toctree::
    :maxdepth: 2
