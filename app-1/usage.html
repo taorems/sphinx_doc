@@ -238,134 +238,108 @@
 <section id="creating-code-documentation">
 <h2>Creating code documentation<a class="headerlink" href="#creating-code-documentation" title="Link to this heading">#</a></h2>
 <p>This section elaborates on how to autodocument code. Here is a sample of test python code for lumache.py and math_operations.py:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span> <span class="n">Here</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">sample</span> <span class="n">of</span> <span class="n">lumache</span><span class="o">.</span><span class="n">py</span> <span class="n">code</span><span class="p">:</span>
+
+<span class="k">def</span> <span class="nf">test_doc</span><span class="p">():</span>
+<span class="w">   </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">   Return a list of random ingredients as strings.</span>
+
+<span class="sd">   :param kind: Optional &quot;kind&quot; of ingredients.</span>
+<span class="sd">   :type kind: list[str] or None</span>
+<span class="sd">   :raise lumache.InvalidKindError: If the kind is invalid.</span>
+<span class="sd">   :return: The ingredients list.</span>
+<span class="sd">   :rtype: list[str]</span>
+
+<span class="sd">   &quot;&quot;&quot;</span>
+   <span class="k">return</span> <span class="p">[</span><span class="s2">&quot;easy, peasy, lemon, squeezy&quot;</span><span class="p">]</span>
+
+<span class="k">class</span> <span class="nc">InvalidKindError</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+<span class="w">   </span><span class="sd">&quot;&quot;&quot;Raised if the kind is invalid.&quot;&quot;&quot;</span>
+   <span class="k">pass</span>
 </pre></div>
 </div>
-<p>Here is a sample of lumache.py code:</p>
-<blockquote>
-<div><dl>
-<dt>def test_doc():</dt><dd><p>“””
-Return a list of random ingredients as strings.</p>
-<dl class="field-list simple">
-<dt class="field-odd">param kind<span class="colon">:</span></dt>
-<dd class="field-odd"><p>Optional “kind” of ingredients.</p>
-</dd>
-<dt class="field-even">type kind<span class="colon">:</span></dt>
-<dd class="field-even"><p>list[str] or None</p>
-</dd>
-<dt class="field-odd">raise lumache.InvalidKindError<span class="colon">:</span></dt>
-<dd class="field-odd"><p>If the kind is invalid.</p>
-</dd>
-<dt class="field-even">return<span class="colon">:</span></dt>
-<dd class="field-even"><p>The ingredients list.</p>
-</dd>
-<dt class="field-odd">rtype<span class="colon">:</span></dt>
-<dd class="field-odd"><p>list[str]</p>
-</dd>
-</dl>
-<p>“””
-return [“easy, peasy, lemon, squeezy”]</p>
-</dd>
-<dt>class InvalidKindError(Exception):</dt><dd><p>“””Raised if the kind is invalid.”””
-pass</p>
-</dd>
-</dl>
-</div></blockquote>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span> <span class="n">Here</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">sample</span> <span class="n">of</span> <span class="n">math_operations</span><span class="o">.</span><span class="n">py</span> <span class="n">code</span><span class="p">:</span>
+
+<span class="k">class</span> <span class="nc">Calculator</span><span class="p">:</span>
+<span class="w"> </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd"> A class used to represent a calculator that performs basic arithmetic operations.</span>
+
+<span class="sd"> &quot;&quot;&quot;</span>
+ <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">     </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">     The constructor for Calculator class.</span>
+
+<span class="sd">     &quot;&quot;&quot;</span>
+     <span class="k">pass</span>
+
+ <span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+<span class="w">     </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">     Perform addition of two numbers.</span>
+
+<span class="sd">     Args:</span>
+<span class="sd">         x (float or int): The first number.</span>
+<span class="sd">         y (float or int): The second number.</span>
+
+<span class="sd">     Returns:</span>
+<span class="sd">         float or int: The result of the addition operation.</span>
+<span class="sd">     &quot;&quot;&quot;</span>
+     <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+
+ <span class="k">def</span> <span class="nf">subtract</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+<span class="w">     </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">     Perform subtraction of two numbers.</span>
+
+<span class="sd">     Args:</span>
+<span class="sd">         x (float or int): The first number.</span>
+<span class="sd">         y (float or int): The second number.</span>
+
+<span class="sd">     Returns:</span>
+<span class="sd">         float or int: The result of the subtraction operation.</span>
+<span class="sd">     &quot;&quot;&quot;</span>
+     <span class="k">return</span> <span class="n">x</span> <span class="o">-</span> <span class="n">y</span>
+
+ <span class="k">def</span> <span class="nf">multiply</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+<span class="w">     </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">     Perform multiplication of two numbers.</span>
+
+<span class="sd">     Args:</span>
+<span class="sd">         x (float or int): The first number.</span>
+<span class="sd">         y (float or int): The second number.</span>
+
+<span class="sd">     Returns:</span>
+<span class="sd">         float or int: The result of the multiplication operation.</span>
+<span class="sd">     &quot;&quot;&quot;</span>
+     <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">y</span>
+
+ <span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+<span class="w">     </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">     Perform division of two numbers.</span>
+
+<span class="sd">     Args:</span>
+<span class="sd">         x (float or int): The numerator.</span>
+<span class="sd">         y (float or int): The denominator.</span>
+
+<span class="sd">     Returns:</span>
+<span class="sd">         float or str: The result of the division operation. If division by zero occurs, returns &quot;Cannot divide by zero.&quot;</span>
+<span class="sd">     &quot;&quot;&quot;</span>
+     <span class="k">if</span> <span class="n">y</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+         <span class="k">return</span> <span class="s2">&quot;Cannot divide by zero&quot;</span>
+     <span class="k">return</span> <span class="n">x</span> <span class="o">/</span> <span class="n">y</span>
+
+<span class="k">def</span> <span class="nf">test_doc</span><span class="p">():</span>
+<span class="w">   </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">   Return a list of random ingredients as strings.</span>
+
+<span class="sd">   :param kind: Optional &quot;kind&quot; of ingredients.</span>
+<span class="sd">   :type kind: list[str] or None</span>
+<span class="sd">   :raise lumache.InvalidKindError: If the kind is invalid.</span>
+<span class="sd">   :return: The ingredients list.</span>
+<span class="sd">   :rtype: list[str]</span>
+
+<span class="sd">   &quot;&quot;&quot;</span>
+   <span class="k">return</span> <span class="p">[</span><span class="s2">&quot;easy, peasy, lemon, squeezy&quot;</span><span class="p">]</span>
 </pre></div>
 </div>
-<p>Here is a sample of math_operations.py code:</p>
-<blockquote>
-<div><dl>
-<dt>class Calculator:</dt><dd><p>“””
-A class used to represent a calculator that performs basic arithmetic operations.</p>
-<p>“””
-def __init__(self):</p>
-<blockquote>
-<div><p>“””
-The constructor for Calculator class.</p>
-<p>“””
-pass</p>
-</div></blockquote>
-<dl>
-<dt>def add(self, x, y):</dt><dd><p>“””
-Perform addition of two numbers.</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>x (float or int): The first number.
-y (float or int): The second number.</p>
-</dd>
-<dt>Returns:</dt><dd><p>float or int: The result of the addition operation.</p>
-</dd>
-</dl>
-<p>“””
-return x + y</p>
-</dd>
-<dt>def subtract(self, x, y):</dt><dd><p>“””
-Perform subtraction of two numbers.</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>x (float or int): The first number.
-y (float or int): The second number.</p>
-</dd>
-<dt>Returns:</dt><dd><p>float or int: The result of the subtraction operation.</p>
-</dd>
-</dl>
-<p>“””
-return x - y</p>
-</dd>
-<dt>def multiply(self, x, y):</dt><dd><p>“””
-Perform multiplication of two numbers.</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>x (float or int): The first number.
-y (float or int): The second number.</p>
-</dd>
-<dt>Returns:</dt><dd><p>float or int: The result of the multiplication operation.</p>
-</dd>
-</dl>
-<p>“””
-return x * y</p>
-</dd>
-<dt>def divide(self, x, y):</dt><dd><p>“””
-Perform division of two numbers.</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>x (float or int): The numerator.
-y (float or int): The denominator.</p>
-</dd>
-<dt>Returns:</dt><dd><p>float or str: The result of the division operation. If division by zero occurs, returns “Cannot divide by zero.”</p>
-</dd>
-</dl>
-<p>“””
-if y == 0:</p>
-<blockquote>
-<div><p>return “Cannot divide by zero”</p>
-</div></blockquote>
-<p>return x / y</p>
-</dd>
-</dl>
-</dd>
-<dt>def test_doc():</dt><dd><p>“””
-Return a list of random ingredients as strings.</p>
-<dl class="field-list simple">
-<dt class="field-odd">param kind<span class="colon">:</span></dt>
-<dd class="field-odd"><p>Optional “kind” of ingredients.</p>
-</dd>
-<dt class="field-even">type kind<span class="colon">:</span></dt>
-<dd class="field-even"><p>list[str] or None</p>
-</dd>
-<dt class="field-odd">raise lumache.InvalidKindError<span class="colon">:</span></dt>
-<dd class="field-odd"><p>If the kind is invalid.</p>
-</dd>
-<dt class="field-even">return<span class="colon">:</span></dt>
-<dd class="field-even"><p>The ingredients list.</p>
-</dd>
-<dt class="field-odd">rtype<span class="colon">:</span></dt>
-<dd class="field-odd"><p>list[str]</p>
-</dd>
-</dl>
-<p>“””
-return [“easy, peasy, lemon, squeezy”]</p>
-</dd>
-</dl>
-</div></blockquote>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The documentation is split in 2 categories. First, using manual writing of the code documentation in the rst file. Second, using the sphinx-autodoc extension.</p>
