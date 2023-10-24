@@ -16,13 +16,13 @@ Repository Structure
 --------------------
 .. _Repo-structure:
 
-The repo is structured as follows:
+.. The repo is structured as follows:
 
-.. figure:: _static/repo_structure.jpg
-   :align: center
-   :width: 100%
+.. .. figure:: _static/repo_structure.jpg
+..    :align: center
+..    :width: 100%
    
-   Fig: Repository Structure
+..    Fig: Repository Structure
 
 
 The text below is written using 'code-block' directive:
@@ -42,9 +42,15 @@ The text below is written using 'code-block' directive:
    │   ├── source/
    │   │   ├── conf.py
    |   |   ├── index.rst
-   |   |   ├── usage.rst
-   |   |   ├── quickstart.rst
-   |   |   ├── _static/
+   |   |   ├── app-1
+   |   |       ├── usage.rst
+   |   |       ├── quickstart.rst
+   |   |       ├── api.rst
+   |   |       ├── frontend.rst
+   |   |       ├── _static/
+   |   |   ├── app-2
+   |   |       ├── quickstart.rst
+   |   |       ├── _static/
 
 
 Creating code documentation
@@ -53,6 +59,7 @@ Creating code documentation
 This section elaborates on how to autodocument code. Here is a sample of test python code for lumache.py and math_operations.py:
 
 .. code-block:: python
+Here is a sample of lumache.py code:
 
    def test_doc():
       """
@@ -71,7 +78,9 @@ This section elaborates on how to autodocument code. Here is a sample of test py
       """Raised if the kind is invalid."""
       pass
 
+
 .. code-block:: python
+Here is a sample of math_operations.py code:
 
    class Calculator:
     """
@@ -189,7 +198,7 @@ The steps below are done by using the sphinx-autodoc extension. The sphinx-autod
 .. note::
    The important thing for this to work is that the path of the code should be added to the sys.path variable. This can be done by adding the following line to the conf.py file:
 
-   ``sys.path.insert(0, os.path.abspath('../code'))``
+   ``sys.path.insert(0, os.path.abspath('../../app-1/code'))``
 
    In the config file, there is also a system path as follows:
 
