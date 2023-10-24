@@ -8,13 +8,10 @@ Welcome to Test's documentation!
 
 **Test** is a web application for testing the documentation of application. It is developed by the *A-team*.
 
-
-Contents
---------
-
 .. toctree::
    :maxdepth: 2
    :caption: app-1 Documentation
+   :hidden:
 
    app-1/quickstart
    app-1/usage
@@ -24,6 +21,7 @@ Contents
 .. toctree::
    :maxdepth: 2
    :caption: App-2 Documentation
+   :hidden:
 
    app-2/quickstart
 
