@@ -212,6 +212,34 @@
 </div>
 <div class="toctree-wrapper compound">
 </div>
+<section id="repository-structure">
+<h2>Repository Structure<a class="headerlink" href="#repository-structure" title="Link to this heading">#</a></h2>
+<span class="target" id="repo-structure"></span><p>The text below is written using ‘code-block’ directive:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>project_root/
+├── app-1/
+│   ├── code/
+│        ├── python_files.py
+├── app-2/
+│   ├── code/
+|        ├── python_files.py
+├── docs/
+│   ├── build/
+|       ├── html/
+│   ├── source/
+│   │   ├── conf.py
+|   |   ├── index.rst
+|   |   ├── app-1
+|   |       ├── usage.rst
+|   |       ├── intro.rst
+|   |       ├── api.rst
+|   |       ├── frontend.rst
+|   |       ├── _static/
+|   |             ├── swaggerui/
+|   |   ├── app-2
+|   |       ├── intro.rst
+|   |       ├── _static/
+</pre></div>
+</div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>This documentation is still under development and is not intended to be used as a reference for any application.</p>
@@ -221,6 +249,7 @@
 <p>This documentation is built using <a class="reference external" href="http://sphinx-doc.org/">Sphinx</a> and <a class="reference external" href="https://readthedocs.org/">Read the Docs</a>. The source code is hosted on GitHub.
 Sphinx supports documenting code objects in several languages, namely Python, C, C++, JavaScript, and reStructuredText. Each of them can be documented using a series of directives and roles grouped by domain.</p>
 </div>
+</section>
 </section>
 
         </article>
@@ -269,6 +298,7 @@ Sphinx supports documenting code objects in several languages, namely Python, C,
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">Welcome to Test-app documentation!</a><ul>
+<li><a class="reference internal" href="#repository-structure">Repository Structure</a></li>
 </ul>
 </li>
 </ul>

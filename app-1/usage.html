@@ -221,44 +221,6 @@
 <span class="pre">`</span></code></p>
 <p>Where CONTAINER_ID is the ID of the container running the fastapi server, you can find this with <cite>docker ps</cite>.</p>
 </section>
-<section id="comment-operations">
-<h3>Comment operations<a class="headerlink" href="#comment-operations" title="Link to this heading">#</a></h3>
-<p>To keep track of comments, a separate database is created.</p>
-<p>The comment database is a list of comments, where each comment is a dictionary with the following keys:</p>
-<ul class="simple">
-<li><p><cite>comment</cite>: The comment itself</p></li>
-<li><p><cite>operation_id</cite>: The id of the operation that the comment is associated with</p></li>
-<li><p><cite>id</cite>: The id of the comment</p></li>
-</ul>
-</section>
-</section>
-<section id="repository-structure">
-<h2>Repository Structure<a class="headerlink" href="#repository-structure" title="Link to this heading">#</a></h2>
-<span class="target" id="repo-structure"></span><p>The text below is written using ‘code-block’ directive:</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>project_root/
-├── app-1/
-│   ├── code/
-│        ├── python_files.py
-├── app-2/
-│   ├── code/
-|        ├── python_files.py
-├── docs/
-│   ├── build/
-|       ├── html/
-│   ├── source/
-│   │   ├── conf.py
-|   |   ├── index.rst
-|   |   ├── app-1
-|   |       ├── usage.rst
-|   |       ├── quickstart.rst
-|   |       ├── api.rst
-|   |       ├── frontend.rst
-|   |       ├── _static/
-|   |   ├── app-2
-|   |       ├── quickstart.rst
-|   |       ├── _static/
-</pre></div>
-</div>
 </section>
 <section id="creating-code-documentation">
 <h2>Creating code documentation<a class="headerlink" href="#creating-code-documentation" title="Link to this heading">#</a></h2>
@@ -527,10 +489,8 @@ will raise an exception.</p>
 <li><a class="reference internal" href="#installation">Installation</a></li>
 <li><a class="reference internal" href="#quickstart">Quickstart</a><ul>
 <li><a class="reference internal" href="#dev-run">Dev Run</a></li>
-<li><a class="reference internal" href="#comment-operations">Comment operations</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#repository-structure">Repository Structure</a></li>
 <li><a class="reference internal" href="#creating-code-documentation">Creating code documentation</a><ul>
 <li><a class="reference internal" href="#manual-approach">Manual approach</a><ul>
 <li><a class="reference internal" href="#lumache.get_random_ingredients"><code class="docutils literal notranslate"><span class="pre">lumache.get_random_ingredients()</span></code></a></li>
