@@ -3,10 +3,17 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Test's documentation!
+Welcome to Test-app documentation!
 ======================================================
 
 **Test** is a web application for testing the documentation of application. It is developed by the *A-team*.
+
+The key focus points for this documentation are the followings:
+
+   1. Layout a stucture for the documentation of multiple web applications 
+   2. Implement automating code documentation from the source code
+
+Scroll through the table of contents to the left to see what is available.
 
 .. toctree::
    :maxdepth: 2
@@ -27,14 +34,8 @@ Welcome to Test's documentation!
    app-2/api
 
 
-This is a test site. The purpose of this site is to test the documentation of the web application and the autodocumentation of the code.
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. warning::
+   This documentation is still under development and is not intended to be used as a reference for any application.
 
 .. note::
 
