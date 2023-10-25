@@ -37,6 +37,7 @@ Use case
 --------
 
 The use case of such a documentation are as follows:
+
 1. To provide a single source of documentation for multiple web applications. 
 2. The documentation is generated automatically from the source code and is hosted on GitHub pages. This way, the documentation is always up-to-date with the source code and the developers do not have to spend time on writing documentation. 
 3. It is also easily readable and accessible for the users of the application to validate the logic used in the application, rather then reading the source code. 
