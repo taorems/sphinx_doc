@@ -20,19 +20,19 @@ Scroll through the table of contents on the left to see what is available.
    :caption: app-1 Documentation
    :hidden:
 
-   /app-1/intro
-   /app-1/usage
-   /app-1/api
-      /app-1/backend 
-   /app-1/frontend
+   app-1/intro
+   app-1/usage
+   app-1/api
+      backend
+   app-1/frontend
 
 .. toctree::
    :maxdepth: 2
    :caption: App-2 Documentation
    :hidden:
 
-   /app-2/intro
-   /app-2/api
+   app-2/intro
+   app-2/api
 
 
 .. warning::
