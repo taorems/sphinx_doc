@@ -16,7 +16,7 @@ sys.path.insert(0, pathlib.Path(__file__).parents[2].resolve().as_posix())
 # sys.path.insert(0, os.path.abspath('home/runner/work/sphinx_doc/sphinx_doc/apps/code'))
 # sys.path.insert(0, os.path.abspath('../code'))
 sys.path.insert(0, os.path.abspath('../../app-1/code'))
-sys.path.insert(0, os.path.abspath('./app-1/_static'))
+sys.path.insert(0, os.path.abspath('../app-1/_static'))
 
 project = 'Test Sphinx Generator'
 copyright = '2023, Sunny'
@@ -57,4 +57,4 @@ html_theme = 'furo'
 html_theme_options = {
     "dark_mode_code_blocks": True,
 }
-html_static_path = ['_static']
+html_static_path = ['app-1/_static']
