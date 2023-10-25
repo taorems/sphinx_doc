@@ -27,7 +27,7 @@ Scroll through the table of contents on the left to see what is available.
 
 .. toctree::
    :maxdepth: 2
-   :caption: App-2 Documentation
+   :caption: app-2 Documentation
    :hidden:
 
    app-2/intro
@@ -52,28 +52,35 @@ The text below is written using 'code-block' directive:
 .. code-block:: text
     
    project_root/
+   ├── .github/
+   |   ├── workflows/
    ├── app-1/
    │   ├── code/
-   │        ├── python_files.py
+   │       ├── python_files.py
    ├── app-2/
    │   ├── code/
-   |        ├── python_files.py
+   |       ├── python_files.py
    ├── docs/
    │   ├── build/
    |       ├── html/
    │   ├── source/
-   │   │   ├── conf.py
-   |   |   ├── index.rst
-   |   |   ├── app-1
-   |   |       ├── usage.rst
-   |   |       ├── intro.rst
-   |   |       ├── api.rst
-   |   |       ├── frontend.rst
-   |   |       ├── _static/
-   |   |             ├── swaggerui/
-   |   |   ├── app-2
-   |   |       ├── intro.rst
-   |   |       ├── _static/
+   │       ├── conf.py
+   |       ├── index.rst
+   |       ├── app-1
+   |       |   ├── usage.rst
+   |       |   ├── intro.rst
+   |       |   ├── api.rst
+   |       |   ├── frontend.rst
+   |       |   ├── _static/
+   |       |         ├── swaggerui/
+   |       ├── app-2
+   |           ├── intro.rst
+   |           ├── _static/
+
+Configuration
+-------------
+
+In order to setup the github-pages for automatic documentation generation, the following workflow is added:
 
 .. tabs::
 
