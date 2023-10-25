@@ -58,8 +58,6 @@ Repository Structure
 
 This is the structure of the repository which host multiple applications, for instance, app-1, app-2, etc. along with the documentation directory. 
 
-The text below is written using 'code-block' directive:
-
 .. code-block:: text
     
    project_root/
