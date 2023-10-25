@@ -92,8 +92,8 @@ Creating code documentation
 This section elaborates on how to autodocument code. Here is a sample of test python code for lumache.py and math_operations.py:
 
 .. code-block:: python
-    :caption: lumache.py
-    :name: lumache-py
+   :caption: lumache.py
+   :name: lumache-py
 
 
    def test_doc():
@@ -115,8 +115,8 @@ This section elaborates on how to autodocument code. Here is a sample of test py
 
 
 .. code-block:: python
-    :caption: math_operations.py
-    :name: math_operations-py
+   :caption: math_operations.py
+   :name: math_operations-py
 
 
    class Calculator:
