@@ -93,6 +93,8 @@ This section elaborates on how to autodocument code. Here is a sample of test py
 
 .. code-block:: python
     :caption: lumache.py
+    :name: lumache-py
+
 
    def test_doc():
       """
@@ -114,6 +116,8 @@ This section elaborates on how to autodocument code. Here is a sample of test py
 
 .. code-block:: python
     :caption: math_operations.py
+    :name: math_operations-py
+
 
    class Calculator:
     """
