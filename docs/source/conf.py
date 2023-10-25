@@ -37,6 +37,7 @@ extensions = [
     'sphinxcontrib.httpdomain',
     'sphinxcontrib.swaggerui',
     'swagger_plugin_for_sphinx',
+    'sphinx_tabs.tabs',
 ]
 
 templates_path = ['app-1/_templates', 'app-2/_templates']
