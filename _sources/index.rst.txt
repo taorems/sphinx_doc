@@ -23,7 +23,6 @@ Scroll through the table of contents on the left to see what is available.
    app-1/intro
    app-1/usage
    app-1/api
-      app-1/backend
    app-1/frontend
 
 .. toctree::
