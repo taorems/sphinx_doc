@@ -10,8 +10,8 @@ Welcome to Test-app documentation
 
 The key focus points for this documentation are the followings:
 
-1. Layout a structure for the documentation of multiple web applications within a single repository
-2. Implement automatic code documentation from the source code
+1. Layout a structure for the documentation of multiple web applications within a single repository.
+2. Implement automatic code documentation from the source code.
 
 Scroll through the table of contents on the left to see what is available.
 
@@ -93,7 +93,7 @@ The text below is written using 'code-block' directive:
 Configuration
 -------------
 
-In order to setup the github-pages for automatic documentation generation, the following workflow is added:
+In order to setup the github-pages for automatic generation of documentation, the following workflow is added:
 
 .. tabs::
 
@@ -110,6 +110,16 @@ In order to setup the github-pages for automatic documentation generation, the f
    .. tab:: Other
 
       Other documentation generator setup.
+
+.. note::
+   The `gh-pages` branch is not created by the user. It is created when the workflow is run via git-actions, which is activated when a push is made to the main branch as indicated in the doc.yml file. 
+   After the `gh-pages` branch is created then set the GitHub pages deployment branch to `gh-pages` from the repository settings, as shown in the image below. 
+
+.. figure:: _static/gh-pages.jpg
+   :align: center
+   :width: 100%
+   
+   GitHub-Pages Settings
 
 
 .. warning::
