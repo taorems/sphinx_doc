@@ -10,7 +10,7 @@ Welcome to Test-app documentation
 
 The key focus points for this documentation are the followings:
 
-1. Layout a structure for the documentation of multiple web applications within a single repository.
+1. Lay out a structure for the documentation of multiple web applications within a single repository.
 2. Implement automatic code documentation from the source code.
 
 Scroll through the table of contents on the left to see what is available.
