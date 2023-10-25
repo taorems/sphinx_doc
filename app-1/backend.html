@@ -3,10 +3,10 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Usage" href="usage.html" /><link rel="prev" title="Welcome to Test-app documentation!" href="../index.html" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" />
 
     <!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>Introduction - Test Sphinx Generator 1.0 documentation</title>
+        <title>SwaggerUI backend API - Test Sphinx Generator 1.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=36a5483c" />
@@ -155,8 +155,8 @@
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <p class="caption" role="heading"><span class="caption-text">app-1 Documentation</span></p>
-<ul class="current">
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Introduction</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api.html">API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="frontend.html">Frontend</a></li>
@@ -199,9 +199,32 @@
           </label>
         </div>
         <article role="main">
-          <section id="introduction">
-<h1>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h1>
-<p>This is the introduction page to the application-1, which demonstrates its use case.</p>
+          <section id="swaggerui-backend-api">
+<h1>SwaggerUI backend API<a class="headerlink" href="#swaggerui-backend-api" title="Link to this heading">#</a></h1>
+<p>This is the swagger UI for the backend API. It is generated from the openapi.json file in the backend API.</p>
+<div id="swagger-ui-0"></div>
+<link rel="stylesheet" href="../_static/swaggerui/swagger-ui.css" type="text/css" />
+<script src="https://unpkg.com/swagger-ui-dist@3/swagger-ui-bundle.js"></script>
+<script src="https://unpkg.com/swagger-ui-dist@3/swagger-ui-standalone-preset.js"></script>
+<script>
+   window.addEventListener('DOMContentLoaded', (event) => {
+      const ui = SwaggerUIBundle({
+        url: "../_static/swaggerui/openapi.json",
+        dom_id: "#swagger-ui-0",
+        defaultModelsExpandDepth: -1, // Hides the Schemas section at the API Document bottom
+        deepLinking: true,
+        filter: "",
+        presets: [
+          SwaggerUIBundle.presets.apis,
+          SwaggerUIStandalonePreset
+        ],
+        plugins: [
+          SwaggerUIBundle.plugins.DownloadUrl
+        ],
+        layout: "StandaloneLayout"
+      })
+   });
+</script>
 </section>
 
         </article>
@@ -209,26 +232,8 @@
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="usage.html">
-              <div class="page-info">
-                <div class="context">
-                  <span>Next</span>
-                </div>
-                <div class="title">Usage</div>
-              </div>
-              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
-            </a>
-          <a class="prev-page" href="../index.html">
-              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
-              <div class="page-info">
-                <div class="context">
-                  <span>Previous</span>
-                </div>
-                
-                <div class="title">Home</div>
-                
-              </div>
-            </a>
+          
+          
         </div>
         <div class="bottom-of-page">
           <div class="left-details">

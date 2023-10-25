@@ -16,13 +16,14 @@ The key focus points for this documentation are the followings:
 Scroll through the table of contents on the left to see what is available.
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: app-1 Documentation
    :hidden:
 
    /app-1/intro
    /app-1/usage
-   /app-1/api 
+   /app-1/api
+      /app-1/backend 
    /app-1/frontend
 
 .. toctree::
@@ -31,7 +32,7 @@ Scroll through the table of contents on the left to see what is available.
    :hidden:
 
    /app-2/intro
-   /pp-2/api
+   /app-2/api
 
 
 .. warning::
