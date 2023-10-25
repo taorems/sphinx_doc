@@ -1,1 +1,2 @@
-import apps.code as code
+def get_asset(asset_id: int):
+    pass
