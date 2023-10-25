@@ -13,10 +13,7 @@ import sys
 import os
 
 sys.path.insert(0, pathlib.Path(__file__).parents[2].resolve().as_posix())
-# sys.path.insert(0, os.path.abspath('home/runner/work/sphinx_doc/sphinx_doc/apps/code'))
-# sys.path.insert(0, os.path.abspath('../code'))
 sys.path.insert(0, os.path.abspath('../../app-1/code'))
-sys.path.insert(0, os.path.abspath('../app-1/_static'))
 
 project = 'Test Sphinx Generator'
 copyright = '2023, Sunny'
@@ -42,7 +39,7 @@ extensions = [
     'swagger_plugin_for_sphinx',
 ]
 
-templates_path = ['_templates']
+templates_path = ['app-1/_templates', 'app-2/_templates']
 exclude_patterns = []
 
 
@@ -57,4 +54,4 @@ html_theme = 'furo'
 html_theme_options = {
     "dark_mode_code_blocks": True,
 }
-html_static_path = ['app-1/_static']
+html_static_path = ['app-1/_static', 'app-2/_static']

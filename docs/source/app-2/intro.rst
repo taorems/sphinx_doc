@@ -1,10 +1,15 @@
+Introduction
+============
+
+This is the introduction page to the application-2.
+
 Quickstart
-==========
+----------
 
 This is a quickstart guide to get the application up and running.
 
 Dev Run
--------
+^^^^^^^
 
 To run an instance of the app with a database included, run the powershell script run.dev.ps1.
 
@@ -20,7 +25,7 @@ Where CONTAINER_ID is the ID of the container running the fastapi server, you ca
 
 
 Comment operations
--------------------
+^^^^^^^^^^^^^^^^^^
 
 To keep track of comments, a separate database is created.
 
