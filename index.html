@@ -9,6 +9,7 @@
         <title>Test Sphinx Generator 1.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=135e06be" />
+    <link rel="stylesheet" type="text/css" href="_static/tabs.css?v=a5c4661c" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=36a5483c" />
     
     
@@ -240,6 +241,57 @@
 |   |       ├── _static/
 </pre></div>
 </div>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">Sphinx</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">Other</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><p>Since this project uses Sphinx,
+the following .yml workflow is added for git-actions.</p>
+<div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-text">doc.yml</span><a class="headerlink" href="#id1" title="Link to this code">#</a></div>
+<div class="highlight-yml notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span># Your GitHub workflow file under .github/workflows/
+<span class="linenos"> 2</span>name: Documentation CI
+<span class="linenos"> 3</span>
+<span class="linenos"> 4</span>on: 
+<span class="linenos"> 5</span>  push:
+<span class="linenos"> 6</span>    branches:
+<span class="linenos"> 7</span>      - main
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span>permissions:
+<span class="linenos">10</span>  contents: write
+<span class="linenos">11</span>  pages: write
+<span class="linenos">12</span>  id-token: write
+<span class="linenos">13</span>
+<span class="linenos">14</span>jobs:
+<span class="linenos">15</span>  publish-docs:
+<span class="linenos">16</span>    runs-on: ubuntu-latest
+<span class="linenos">17</span>    steps:
+<span class="linenos">18</span>      - name: Checkout
+<span class="linenos">19</span>        uses: actions/checkout@v4
+<span class="linenos">20</span>      - name: Set up Python
+<span class="linenos">21</span>        uses: actions/setup-python@v4
+<span class="linenos">22</span>        with:
+<span class="linenos">23</span>          python-version: 3.x
+<span class="linenos">24</span>
+<span class="linenos">25</span>      - name: Install dependencies
+<span class="linenos">26</span>        run: | 
+<span class="linenos">27</span>            python -m pip install --upgrade pip
+<span class="linenos">28</span>            pip install -r requirements.txt
+<span class="linenos">29</span>      - name: Add path to PYTHONPATH
+<span class="linenos">30</span>        run: echo &quot;export PYTHONPATH=$PYTHONPATH:$GITHUB_WORKSPACE/apps/code&quot; &gt;&gt; $GITHUB_ENV    
+<span class="linenos">31</span>
+<span class="linenos">32</span>      - name: Build
+<span class="linenos">33</span>        run: | 
+<span class="linenos">34</span>            cd ./docs
+<span class="linenos">35</span>            make html     
+<span class="linenos">36</span>
+<span class="linenos">37</span>      - name: Deploy
+<span class="linenos">38</span>        uses: peaceiris/actions-gh-pages@v3
+<span class="linenos">39</span>        with:
+<span class="linenos">40</span>          github_token: ${{ secrets.GITHUB_TOKEN }}
+<span class="linenos">41</span>          publish_dir: docs/build/html
+</pre></div>
+</div>
+</div>
+</div><div aria-labelledby="tab-0-0-1" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-1" name="0-1" role="tabpanel" tabindex="0"><p>Other documentation generator setup.</p>
+</div></div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>This documentation is still under development and is not intended to be used as a reference for any application.</p>
@@ -314,5 +366,6 @@ Sphinx supports documenting code objects in several languages, namely Python, C,
     <script src="_static/doctools.js?v=888ff710"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/scripts/furo.js?v=32e29ea5"></script>
+    <script src="_static/tabs.js?v=3030b3cb"></script>
     </body>
 </html>

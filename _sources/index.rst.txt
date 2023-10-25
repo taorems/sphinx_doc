@@ -79,13 +79,17 @@ The text below is written using 'code-block' directive:
 
    .. tab:: Sphinx
 
-        Since this project uses Sphinx,
-        the folowing .yml workflow is added for git-actions.
+      Since this project uses Sphinx,
+      the following .yml workflow is added for git-actions.
 
-        .. literalinclude:: ../../.github/workflows/doc.yml
-           :language: yml
-           :linenos:
-           :caption: doc.yml
+      .. literalinclude:: ../../.github/workflows/doc.yml
+         :language: yml
+         :linenos:
+         :caption: doc.yml
+
+   .. tab:: Other
+
+      Other documentation generator setup.
 
 
 .. warning::
