@@ -201,11 +201,11 @@
         </div>
         <article role="main">
           <section id="welcome-to-test-app-documentation">
-<h1>Welcome to Test-app documentation!<a class="headerlink" href="#welcome-to-test-app-documentation" title="Link to this heading">#</a></h1>
+<h1>Welcome to Test-app documentation<a class="headerlink" href="#welcome-to-test-app-documentation" title="Link to this heading">#</a></h1>
 <p><strong>Test</strong> is a web application for testing the documentation of application. It is developed by the <em>A-team</em>.</p>
 <p>The key focus points for this documentation are the followings:</p>
 <ol class="arabic simple">
-<li><p>Layout a stucture for the documentation of multiple web applications</p></li>
+<li><p>Layout a structure for the documentation of multiple web applications within a single repository</p></li>
 <li><p>Implement automatic code documentation from the source code</p></li>
 </ol>
 <p>Scroll through the table of contents on the left to see what is available.</p>
@@ -213,9 +213,17 @@
 </div>
 <div class="toctree-wrapper compound">
 </div>
+<section id="use-case">
+<h2>Use case<a class="headerlink" href="#use-case" title="Link to this heading">#</a></h2>
+<p>The use case of such a documentation are as follows:
+1. To provide a single source of documentation for multiple web applications.
+2. The documentation is generated automatically from the source code and is hosted on GitHub pages. This way, the documentation is always up-to-date with the source code and the developers do not have to spend time on writing documentation.
+3. It is also easily readable and accessible for the users of the application to validate the logic used in the application, rather then reading the source code.</p>
+</section>
 <section id="repository-structure">
 <h2>Repository Structure<a class="headerlink" href="#repository-structure" title="Link to this heading">#</a></h2>
-<span class="target" id="repo-structure"></span><p>The text below is written using ‘code-block’ directive:</p>
+<span class="target" id="repo-structure"></span><p>This is the structure of the repository which host multiple applications, for instance, app-1, app-2, etc. along with the documentation directory.</p>
+<p>The text below is written using ‘code-block’ directive:</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>project_root/
 ├── .github/
 |   ├── workflows/
@@ -232,14 +240,16 @@
 │       ├── conf.py
 |       ├── index.rst
 |       ├── app-1
-|       |   ├── usage.rst
 |       |   ├── intro.rst
+|       |   ├── usage.rst
 |       |   ├── api.rst
 |       |   ├── frontend.rst
 |       |   ├── _static/
 |       |         ├── swaggerui/
 |       ├── app-2
 |           ├── intro.rst
+|           ├── usage.rst
+|           ├── api.rst
 |           ├── _static/
 </pre></div>
 </div>
@@ -353,7 +363,8 @@ Sphinx supports documenting code objects in several languages, namely Python, C,
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">Welcome to Test-app documentation!</a><ul>
+<li><a class="reference internal" href="#">Welcome to Test-app documentation</a><ul>
+<li><a class="reference internal" href="#use-case">Use case</a></li>
 <li><a class="reference internal" href="#repository-structure">Repository Structure</a></li>
 <li><a class="reference internal" href="#configuration">Configuration</a></li>
 </ul>

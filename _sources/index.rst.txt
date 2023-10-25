@@ -3,14 +3,14 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Test-app documentation!
-======================================================
+Welcome to Test-app documentation
+=================================
 
 **Test** is a web application for testing the documentation of application. It is developed by the *A-team*.
 
 The key focus points for this documentation are the followings:
 
-1. Layout a stucture for the documentation of multiple web applications 
+1. Layout a structure for the documentation of multiple web applications within a single repository
 2. Implement automatic code documentation from the source code
 
 Scroll through the table of contents on the left to see what is available.
@@ -33,6 +33,14 @@ Scroll through the table of contents on the left to see what is available.
    app-2/intro
    app-2/api
 
+Use case
+--------
+
+The use case of such a documentation are as follows:
+1. To provide a single source of documentation for multiple web applications. 
+2. The documentation is generated automatically from the source code and is hosted on GitHub pages. This way, the documentation is always up-to-date with the source code and the developers do not have to spend time on writing documentation. 
+3. It is also easily readable and accessible for the users of the application to validate the logic used in the application, rather then reading the source code. 
+
 
 Repository Structure
 --------------------
@@ -46,6 +54,8 @@ Repository Structure
    
 ..    Fig: Repository Structure
 
+
+This is the structure of the repository which host multiple applications, for instance, app-1, app-2, etc. along with the documentation directory. 
 
 The text below is written using 'code-block' directive:
 
@@ -67,14 +77,16 @@ The text below is written using 'code-block' directive:
    │       ├── conf.py
    |       ├── index.rst
    |       ├── app-1
-   |       |   ├── usage.rst
    |       |   ├── intro.rst
+   |       |   ├── usage.rst
    |       |   ├── api.rst
    |       |   ├── frontend.rst
    |       |   ├── _static/
    |       |         ├── swaggerui/
    |       ├── app-2
    |           ├── intro.rst
+   |           ├── usage.rst
+   |           ├── api.rst
    |           ├── _static/
 
 Configuration
