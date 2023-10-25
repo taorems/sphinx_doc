@@ -34,6 +34,60 @@ Scroll through the table of contents on the left to see what is available.
    app-2/api
 
 
+Repository Structure
+--------------------
+.. _Repo-structure:
+
+.. The repo is structured as follows:
+
+.. .. figure:: _static/repo_structure.jpg
+..    :align: center
+..    :width: 100%
+   
+..    Fig: Repository Structure
+
+
+The text below is written using 'code-block' directive:
+
+.. code-block:: text
+    
+   project_root/
+   ├── app-1/
+   │   ├── code/
+   │        ├── python_files.py
+   ├── app-2/
+   │   ├── code/
+   |        ├── python_files.py
+   ├── docs/
+   │   ├── build/
+   |       ├── html/
+   │   ├── source/
+   │   │   ├── conf.py
+   |   |   ├── index.rst
+   |   |   ├── app-1
+   |   |       ├── usage.rst
+   |   |       ├── intro.rst
+   |   |       ├── api.rst
+   |   |       ├── frontend.rst
+   |   |       ├── _static/
+   |   |             ├── swaggerui/
+   |   |   ├── app-2
+   |   |       ├── intro.rst
+   |   |       ├── _static/
+
+.. tabs::
+
+   .. tab:: Sphinx
+
+        Since this project uses Sphinx,
+        the folowing .yml workflow is added for git-actions.
+
+        .. literalinclude:: ../../.github/workflows/doc.yml
+           :language: yml
+           :linenos:
+           :caption: doc.yml
+
+
 .. warning::
    This documentation is still under development and is not intended to be used as a reference for any application.
 

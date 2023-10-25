@@ -33,59 +33,6 @@ docker exec CONTAINER_ID python ./app/utils/add_asset.py
 Where CONTAINER_ID is the ID of the container running the fastapi server, you can find this with `docker ps`.
 
 
-Comment operations
-^^^^^^^^^^^^^^^^^^
-
-To keep track of comments, a separate database is created.
-
-The comment database is a list of comments, where each comment is a dictionary with the following keys:
-
-- `comment`: The comment itself
-- `operation_id`: The id of the operation that the comment is associated with
-- `id`: The id of the comment
-
-
-Repository Structure
---------------------
-.. _Repo-structure:
-
-.. The repo is structured as follows:
-
-.. .. figure:: _static/repo_structure.jpg
-..    :align: center
-..    :width: 100%
-   
-..    Fig: Repository Structure
-
-
-The text below is written using 'code-block' directive:
-
-.. code-block:: text
-    
-   project_root/
-   ├── app-1/
-   │   ├── code/
-   │        ├── python_files.py
-   ├── app-2/
-   │   ├── code/
-   |        ├── python_files.py
-   ├── docs/
-   │   ├── build/
-   |       ├── html/
-   │   ├── source/
-   │   │   ├── conf.py
-   |   |   ├── index.rst
-   |   |   ├── app-1
-   |   |       ├── usage.rst
-   |   |       ├── quickstart.rst
-   |   |       ├── api.rst
-   |   |       ├── frontend.rst
-   |   |       ├── _static/
-   |   |   ├── app-2
-   |   |       ├── quickstart.rst
-   |   |       ├── _static/
-
-
 Creating code documentation
 ---------------------------
 
