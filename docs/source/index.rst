@@ -11,7 +11,7 @@ Welcome to Test-app documentation!
 The key focus points for this documentation are the followings:
 
 1. Layout a stucture for the documentation of multiple web applications 
-2. Implement automating code documentation from the source code
+2. Implement automatic code documentation from the source code
 
 Scroll through the table of contents on the left to see what is available.
 
