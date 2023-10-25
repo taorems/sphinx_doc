@@ -3,10 +3,10 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="prev" title="Frontend" href="../app-1/frontend.html" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="API" href="api.html" /><link rel="prev" title="Frontend" href="../app-1/frontend.html" />
 
     <!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>Quickstart - Test Sphinx Generator 1.0 documentation</title>
+        <title>Introduction - Test Sphinx Generator 1.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=36a5483c" />
@@ -156,14 +156,15 @@
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <p class="caption" role="heading"><span class="caption-text">app-1 Documentation</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../app-1/quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../app-1/intro.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../app-1/usage.html">Usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../app-1/api.html">API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../app-1/frontend.html">Frontend</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">App-2 Documentation</span></p>
 <ul class="current">
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Quickstart</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API</a></li>
 </ul>
 
 </div>
@@ -198,11 +199,14 @@
           </label>
         </div>
         <article role="main">
-          <section id="quickstart">
-<h1>Quickstart<a class="headerlink" href="#quickstart" title="Link to this heading">#</a></h1>
+          <section id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h1>
+<p>This is the introduction page to the application-2.</p>
+<section id="quickstart">
+<h2>Quickstart<a class="headerlink" href="#quickstart" title="Link to this heading">#</a></h2>
 <p>This is a quickstart guide to get the application up and running.</p>
 <section id="dev-run">
-<h2>Dev Run<a class="headerlink" href="#dev-run" title="Link to this heading">#</a></h2>
+<h3>Dev Run<a class="headerlink" href="#dev-run" title="Link to this heading">#</a></h3>
 <p>To run an instance of the app with a database included, run the powershell script run.dev.ps1.</p>
 <p>To access the swagger interface go to <a class="reference external" href="http://localhost:8080/docs">http://localhost:8080/docs</a></p>
 <p>A utility script is provided to create an asset and add operations to it. This script is located in the /app/utils/ folder and is called add_asset.py. The fastapi server needs to be running for it to work. The script can be run with the following command:</p>
@@ -212,7 +216,7 @@
 <p>Where CONTAINER_ID is the ID of the container running the fastapi server, you can find this with <cite>docker ps</cite>.</p>
 </section>
 <section id="comment-operations">
-<h2>Comment operations<a class="headerlink" href="#comment-operations" title="Link to this heading">#</a></h2>
+<h3>Comment operations<a class="headerlink" href="#comment-operations" title="Link to this heading">#</a></h3>
 <p>To keep track of comments, a separate database is created.</p>
 <p>The comment database is a list of comments, where each comment is a dictionary with the following keys:</p>
 <ul class="simple">
@@ -222,13 +226,22 @@
 </ul>
 </section>
 </section>
+</section>
 
         </article>
       </div>
       <footer>
         
         <div class="related-pages">
-          
+          <a class="next-page" href="api.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">API</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
           <a class="prev-page" href="../app-1/frontend.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
@@ -270,9 +283,12 @@
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">Quickstart</a><ul>
+<li><a class="reference internal" href="#">Introduction</a><ul>
+<li><a class="reference internal" href="#quickstart">Quickstart</a><ul>
 <li><a class="reference internal" href="#dev-run">Dev Run</a></li>
 <li><a class="reference internal" href="#comment-operations">Comment operations</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

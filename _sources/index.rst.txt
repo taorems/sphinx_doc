@@ -13,7 +13,7 @@ Welcome to Test's documentation!
    :caption: app-1 Documentation
    :hidden:
 
-   app-1/quickstart
+   app-1/intro
    app-1/usage
    app-1/api 
    app-1/frontend
@@ -23,7 +23,8 @@ Welcome to Test's documentation!
    :caption: App-2 Documentation
    :hidden:
 
-   app-2/quickstart
+   app-2/intro
+   app-2/api
 
 
 This is a test site. The purpose of this site is to test the documentation of the web application and the autodocumentation of the code.
