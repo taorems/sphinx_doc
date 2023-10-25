@@ -10,28 +10,28 @@ Welcome to Test-app documentation!
 
 The key focus points for this documentation are the followings:
 
-   1. Layout a stucture for the documentation of multiple web applications 
-   2. Implement automating code documentation from the source code
+1. Layout a stucture for the documentation of multiple web applications 
+2. Implement automating code documentation from the source code
 
-Scroll through the table of contents to the left to see what is available.
+Scroll through the table of contents on the left to see what is available.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: app-1 Documentation
    :hidden:
 
-   app-1/intro
-   app-1/usage
-   app-1/api 
-   app-1/frontend
+   /app-1/intro
+   /app-1/usage
+   /app-1/api 
+   /app-1/frontend
 
 .. toctree::
    :maxdepth: 2
    :caption: App-2 Documentation
    :hidden:
 
-   app-2/intro
-   app-2/api
+   /app-2/intro
+   /pp-2/api
 
 
 .. warning::
