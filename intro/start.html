@@ -206,19 +206,59 @@
         <article role="main">
           <section id="getting-started">
 <h1>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading">#</a></h1>
-<p>To create such a project, first create a new repository on GitHub, then clone it locally:</p>
+<p>To get started with the documentation, first create a new repository on GitHub or use an existing project repo, then clone it locally:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span>repo_url
 </pre></div>
 </div>
-<p>Then, create a new virtual environment and install the dependencies:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>python<span class="w"> </span>-m<span class="w"> </span>virtualenv<span class="w"> </span>venv
-$<span class="w"> </span><span class="nb">source</span><span class="w"> </span>venv/bin/activate
-$<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+<p>In the local directory where the repo has been cloned, create a new virtual environment and install sphinx:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv
+$<span class="w"> </span>.<span class="se">\.</span>venv<span class="se">\S</span>cripts<span class="se">\A</span>ctivate.ps1
+<span class="o">(</span>.venv<span class="o">)</span><span class="w"> </span>$<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>sphinx
 </pre></div>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Make sure to installed other dependencies as well in the virtual environment, if any.</p>
+</div>
+<p>If everything is installed correctly, you should be able to run the following command to create a new sphinx project:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>.venv<span class="o">)</span><span class="w"> </span>$<span class="w"> </span>sphinx-quickstart<span class="w"> </span>docs
+</pre></div>
+</div>
+<p>Few prompts may pop-up, requesting user inputs for setting up the directory. Follow along and this will create a new directory called <cite>docs</cite> with the following structure:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>docs/
+├── make.bat
+├── Makefile
+├── build/
+├── source/
+│   ├── conf.py
+│   ├── index.rst
+│   ├── _static/
+│   └── _templates/
+└── _build/
+</pre></div>
+</div>
+<p>The purpose of these files are:</p>
+<ul class="simple">
+<li><p><cite>make.bat</cite> and <cite>Makefile</cite> are used to build the documentation.</p></li>
+<li><p><cite>build</cite> is the directory where the rendered documentation is stored.</p></li>
+<li><p><cite>source/config.py</cite> is the configuration file for the Sphinx project. It contains the project metadata, the list of extensions used, and the configuration settings for each extension.</p></li>
+<li><p><cite>source/index.rst</cite> is the root document for the documentation, which serves as the welcome page for the documentation and contains the table of contents tree (toctree).</p></li>
+<li><p><cite>source/_static</cite> is the directory where static files such as images, CSS, and JavaScript files are stored.</p></li>
+<li><p><cite>source/_templates</cite> is the directory where custom templates are stored.</p></li>
+</ul>
+<p>Now, to build the documentation site locally, run the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>.venv<span class="o">)</span><span class="w"> </span>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>docs
+<span class="o">(</span>.venv<span class="o">)</span><span class="w"> </span>$<span class="w"> </span>make<span class="w"> </span>html
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <cite>make html</cite> command will generate the documentation in the <cite>build/html</cite> directory. To view the documentation, open the <cite>index.html</cite> file in a web browser.</p>
+</div>
+<p>When writing documentation for multiple applications, it is recommended to create a separate directory for each application and organise the repository. This is explained in the next section.</p>
 <section id="repository-structure">
 <h2>Repository Structure<a class="headerlink" href="#repository-structure" title="Link to this heading">#</a></h2>
-<span class="target" id="repo-structure"></span><p>This is the structure of the repository which host multiple applications, for instance, app-1, app-2, etc. along with the documentation directory.</p>
+<span class="target" id="repo-structure"></span><p>If the project has two applications, app-1 and app-2, then create two directories, app-1 and app-2, alongside the documentation directory ‘docs’. Create the same app-1 and app-2 directory under the <cite>docs/source</cite> directory as well. The directory structure should look like this:</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>project_root/
 ├── .github/
 |   ├── workflows/
@@ -229,6 +269,8 @@ $<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </sp
 │   ├── code/
 |       ├── python_files.py
 ├── docs/
+|   ├── make.bat
+|   ├── Makefile
 │   ├── build/
 |       ├── html/
 │   ├── source/
@@ -254,7 +296,7 @@ $<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </sp
 <p>In order to setup the github-pages for automatic generation of documentation, the following workflow is added:</p>
 <div class="sphinx-tabs docutils container">
 <div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">Sphinx</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">Other</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><p>Since this project uses Sphinx,
-the following .yml workflow is added for git-actions.</p>
+the following .yml workflow is added for GitHub Actions.</p>
 <div class="literal-block-wrapper docutils container" id="id1">
 <div class="code-block-caption"><span class="caption-text">doc.yml</span><a class="headerlink" href="#id1" title="Link to this code">#</a></div>
 <div class="highlight-yml notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span># Your GitHub workflow file under .github/workflows/
@@ -303,8 +345,8 @@ the following .yml workflow is added for git-actions.</p>
 </div></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The <cite>gh-pages</cite> branch is not created by the user. It is created when the workflow is run via git-actions, which is activated when a push is made to the main branch as indicated in the doc.yml file.
-After the <cite>gh-pages</cite> branch is created then set the GitHub pages deployment branch to <cite>gh-pages</cite> from the repository settings, as shown in the image below.</p>
+<p>The <cite>gh-pages</cite> branch is not created by the user. It is created when the workflow is run via GitHub Actions, which is initiated when a push is made to the main branch as indicated in the doc.yml file.
+After the <cite>gh-pages</cite> branch is created, set the GitHub pages deployment branch to <cite>gh-pages</cite> from the repository settings, as shown in the image below.</p>
 </div>
 <figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../_images/gh-pages.jpg"><img alt="../_images/gh-pages.jpg" src="../_images/gh-pages.jpg" style="width: 100%;" /></a>
