@@ -73,7 +73,7 @@ In order to setup the github-pages for automatic generation of documentation, th
       Since this project uses Sphinx,
       the following .yml workflow is added for git-actions.
 
-      .. literalinclude:: ../../.github/workflows/doc.yml
+      .. literalinclude:: ../../../.github/workflows/doc.yml
          :language: yml
          :linenos:
          :caption: doc.yml
