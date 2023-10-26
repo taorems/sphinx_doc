@@ -3,17 +3,24 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Test-app documentation
+Welcome to App Documentation
 =================================
 
-**Test** is a web application for testing the documentation of application. It is developed by the *A-team*.
+This is a documentation page to test on application documentation for a generic app called **app-1**. It is developed by the *team-name*.
 
 The key focus points for this documentation are the followings:
 
-1. Lay out a structure for the documentation of multiple web applications within a single repository.
-2. Implement automatic code documentation from the source code.
+#. How to setup a documentation for a web application using GitHub pages.
+#. Lay out a structure for the documentation of multiple web applications within a single repository.
+#. Implement automatic code documentation from the source code.
 
 Scroll through the table of contents on the left to see what is available.
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Introduction
+
+   intro
 
 .. toctree::
    :maxdepth: 2
@@ -33,91 +40,14 @@ Scroll through the table of contents on the left to see what is available.
    app-2/intro
    app-2/api
 
-Use case
+Use Case
 --------
 
 The use case of such a documentation are as follows:
 
 1. To provide a single source of documentation for multiple web applications. 
 2. The documentation is generated automatically from the source code and is hosted on GitHub pages. This way, the documentation is always up-to-date with the source code and the developers do not have to spend time on writing documentation. 
-3. It is also easily readable and accessible for the users of the application to validate the logic used in the application, rather then reading the source code. 
-
-
-Repository Structure
---------------------
-.. _Repo-structure:
-
-.. The repo is structured as follows:
-
-.. .. figure:: _static/repo_structure.jpg
-..    :align: center
-..    :width: 100%
-   
-..    Fig: Repository Structure
-
-
-This is the structure of the repository which host multiple applications, for instance, app-1, app-2, etc. along with the documentation directory. 
-
-.. code-block:: text
-    
-   project_root/
-   ├── .github/
-   |   ├── workflows/
-   ├── app-1/
-   │   ├── code/
-   │       ├── python_files.py
-   ├── app-2/
-   │   ├── code/
-   |       ├── python_files.py
-   ├── docs/
-   │   ├── build/
-   |       ├── html/
-   │   ├── source/
-   │       ├── conf.py
-   |       ├── index.rst
-   |       ├── app-1
-   |       |   ├── intro.rst
-   |       |   ├── usage.rst
-   |       |   ├── api.rst
-   |       |   ├── frontend.rst
-   |       |   ├── _static/
-   |       |         ├── swaggerui/
-   |       ├── app-2
-   |           ├── intro.rst
-   |           ├── usage.rst
-   |           ├── api.rst
-   |           ├── _static/
-
-Configuration
--------------
-
-In order to setup the github-pages for automatic generation of documentation, the following workflow is added:
-
-.. tabs::
-
-   .. tab:: Sphinx
-
-      Since this project uses Sphinx,
-      the following .yml workflow is added for git-actions.
-
-      .. literalinclude:: ../../.github/workflows/doc.yml
-         :language: yml
-         :linenos:
-         :caption: doc.yml
-
-   .. tab:: Other
-
-      Other documentation generator setup.
-
-.. note::
-   The `gh-pages` branch is not created by the user. It is created when the workflow is run via git-actions, which is activated when a push is made to the main branch as indicated in the doc.yml file. 
-   After the `gh-pages` branch is created then set the GitHub pages deployment branch to `gh-pages` from the repository settings, as shown in the image below. 
-
-.. figure:: _static/gh-pages.jpg
-   :align: center
-   :width: 100%
-   
-   GitHub-Pages Settings
+3. It is easily readable and accessible for the users of the application to validate the logic used in the application, rather then reading the source code. 
 
 
 .. warning::

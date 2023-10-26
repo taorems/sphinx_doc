@@ -3,10 +3,10 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Introduction" href="intro.html" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Introduction" href="app-1/intro.html" /><link rel="prev" title="Welcome to App Documentation" href="index.html" />
 
     <!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>Test Sphinx Generator 1.0 documentation</title>
+        <title>Introduction - Test Sphinx Generator 1.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="_static/tabs.css?v=a5c4661c" />
@@ -124,7 +124,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="#"><div class="brand">Test Sphinx Generator 1.0 documentation</div></a>
+      <a href="index.html"><div class="brand">Test Sphinx Generator 1.0 documentation</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -144,7 +144,7 @@
   <aside class="sidebar-drawer">
     <div class="sidebar-container">
       
-      <div class="sidebar-sticky"><a class="sidebar-brand" href="#">
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
   
   
   <span class="sidebar-brand-text">Test Sphinx Generator 1.0 documentation</span>
@@ -156,8 +156,8 @@
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
+<ul class="current">
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Introduction</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">app-1 Documentation</span></p>
 <ul>
@@ -204,47 +204,114 @@
           </label>
         </div>
         <article role="main">
-          <section id="welcome-to-app-documentation">
-<h1>Welcome to App Documentation<a class="headerlink" href="#welcome-to-app-documentation" title="Link to this heading">#</a></h1>
-<p>This is a documentation page to test on application documentation for a generic app called <strong>app-1</strong>. It is developed by the <em>team-name</em>.</p>
-<p>The key focus points for this documentation are the followings:</p>
-<ol class="arabic simple">
-<li><p>How to setup a documentation for a web application using GitHub pages.</p></li>
-<li><p>Lay out a structure for the documentation of multiple web applications within a single repository.</p></li>
-<li><p>Implement automatic code documentation from the source code.</p></li>
-</ol>
-<p>Scroll through the table of contents on the left to see what is available.</p>
-<div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="intro.html#repository-structure">Repository Structure</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro.html#configuration">Configuration</a></li>
-</ul>
-</li>
-</ul>
+          <section id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h1>
+<p>To create such a project, you need to create a new repository on GitHub, then clone it locally:</p>
+<p><code class="docutils literal notranslate"><span class="pre">`bash</span>
+<span class="pre">$</span> <span class="pre">git</span> <span class="pre">clone</span> <span class="pre">repo_url</span>
+<span class="pre">`</span></code></p>
+<p>Then, you need to create a new virtual environment and install the dependencies:</p>
+<p><code class="docutils literal notranslate"><span class="pre">`bash</span>
+<span class="pre">$</span> <span class="pre">virtualenv</span> <span class="pre">venv</span>
+<span class="pre">$</span> <span class="pre">source</span> <span class="pre">venv/bin/activate</span>
+<span class="pre">$</span> <span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-r</span> <span class="pre">requirements.txt</span>
+<span class="pre">`</span></code></p>
+<section id="repository-structure">
+<h2>Repository Structure<a class="headerlink" href="#repository-structure" title="Link to this heading">#</a></h2>
+<span class="target" id="repo-structure"></span><p>This is the structure of the repository which host multiple applications, for instance, app-1, app-2, etc. along with the documentation directory.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>project_root/
+├── .github/
+|   ├── workflows/
+├── app-1/
+│   ├── code/
+│       ├── python_files.py
+├── app-2/
+│   ├── code/
+|       ├── python_files.py
+├── docs/
+│   ├── build/
+|       ├── html/
+│   ├── source/
+│       ├── conf.py
+|       ├── index.rst
+|       ├── app-1
+|       |   ├── intro.rst
+|       |   ├── usage.rst
+|       |   ├── api.rst
+|       |   ├── frontend.rst
+|       |   ├── _static/
+|       |         ├── swaggerui/
+|       ├── app-2
+|           ├── intro.rst
+|           ├── usage.rst
+|           ├── api.rst
+|           ├── _static/
+</pre></div>
 </div>
-<div class="toctree-wrapper compound">
+</section>
+<section id="configuration">
+<h2>Configuration<a class="headerlink" href="#configuration" title="Link to this heading">#</a></h2>
+<p>In order to setup the github-pages for automatic generation of documentation, the following workflow is added:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">Sphinx</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">Other</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><p>Since this project uses Sphinx,
+the following .yml workflow is added for git-actions.</p>
+<div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-text">doc.yml</span><a class="headerlink" href="#id1" title="Link to this code">#</a></div>
+<div class="highlight-yml notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span># Your GitHub workflow file under .github/workflows/
+<span class="linenos"> 2</span>name: Documentation CI
+<span class="linenos"> 3</span>
+<span class="linenos"> 4</span>on: 
+<span class="linenos"> 5</span>  push:
+<span class="linenos"> 6</span>    branches:
+<span class="linenos"> 7</span>      - main
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span>permissions:
+<span class="linenos">10</span>  contents: write
+<span class="linenos">11</span>  pages: write
+<span class="linenos">12</span>  id-token: write
+<span class="linenos">13</span>
+<span class="linenos">14</span>jobs:
+<span class="linenos">15</span>  publish-docs:
+<span class="linenos">16</span>    runs-on: ubuntu-latest
+<span class="linenos">17</span>    steps:
+<span class="linenos">18</span>      - name: Checkout
+<span class="linenos">19</span>        uses: actions/checkout@v4
+<span class="linenos">20</span>      - name: Set up Python
+<span class="linenos">21</span>        uses: actions/setup-python@v4
+<span class="linenos">22</span>        with:
+<span class="linenos">23</span>          python-version: 3.x
+<span class="linenos">24</span>
+<span class="linenos">25</span>      - name: Install dependencies
+<span class="linenos">26</span>        run: | 
+<span class="linenos">27</span>            python -m pip install --upgrade pip
+<span class="linenos">28</span>            pip install -r requirements.txt
+<span class="linenos">29</span>
+<span class="linenos">30</span>      - name: Build
+<span class="linenos">31</span>        run: | 
+<span class="linenos">32</span>            cd ./docs
+<span class="linenos">33</span>            make html     
+<span class="linenos">34</span>
+<span class="linenos">35</span>      - name: Deploy
+<span class="linenos">36</span>        uses: peaceiris/actions-gh-pages@v3
+<span class="linenos">37</span>        with:
+<span class="linenos">38</span>          github_token: ${{ secrets.GITHUB_TOKEN }}
+<span class="linenos">39</span>          publish_dir: docs/build/html
+</pre></div>
 </div>
-<div class="toctree-wrapper compound">
 </div>
-<section id="use-case">
-<h2>Use Case<a class="headerlink" href="#use-case" title="Link to this heading">#</a></h2>
-<p>The use case of such a documentation are as follows:</p>
-<ol class="arabic simple">
-<li><p>To provide a single source of documentation for multiple web applications.</p></li>
-<li><p>The documentation is generated automatically from the source code and is hosted on GitHub pages. This way, the documentation is always up-to-date with the source code and the developers do not have to spend time on writing documentation.</p></li>
-<li><p>It is easily readable and accessible for the users of the application to validate the logic used in the application, rather then reading the source code.</p></li>
-</ol>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>This documentation is still under development and is not intended to be used as a reference for any application.</p>
-</div>
+</div><div aria-labelledby="tab-0-0-1" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-1" name="0-1" role="tabpanel" tabindex="0"><p>Other documentation generator setup.</p>
+</div></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This documentation is built using <a class="reference external" href="http://sphinx-doc.org/">Sphinx</a> and <a class="reference external" href="https://readthedocs.org/">Read the Docs</a>. The source code is hosted on GitHub.
-Sphinx supports documenting code objects in several languages, namely Python, C, C++, JavaScript, and reStructuredText. Each of them can be documented using a series of directives and roles grouped by domain.</p>
+<p>The <cite>gh-pages</cite> branch is not created by the user. It is created when the workflow is run via git-actions, which is activated when a push is made to the main branch as indicated in the doc.yml file.
+After the <cite>gh-pages</cite> branch is created then set the GitHub pages deployment branch to <cite>gh-pages</cite> from the repository settings, as shown in the image below.</p>
 </div>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="_images/gh-pages.jpg"><img alt="_images/gh-pages.jpg" src="_images/gh-pages.jpg" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">GitHub-Pages Settings</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 </section>
 </section>
 
@@ -253,7 +320,7 @@ Sphinx supports documenting code objects in several languages, namely Python, C,
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="intro.html">
+          <a class="next-page" href="app-1/intro.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
@@ -262,7 +329,17 @@ Sphinx supports documenting code objects in several languages, namely Python, C,
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          
+          <a class="prev-page" href="index.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Home</div>
+                
+              </div>
+            </a>
         </div>
         <div class="bottom-of-page">
           <div class="left-details">
@@ -293,8 +370,9 @@ Sphinx supports documenting code objects in several languages, namely Python, C,
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">Welcome to App Documentation</a><ul>
-<li><a class="reference internal" href="#use-case">Use Case</a></li>
+<li><a class="reference internal" href="#">Introduction</a><ul>
+<li><a class="reference internal" href="#repository-structure">Repository Structure</a></li>
+<li><a class="reference internal" href="#configuration">Configuration</a></li>
 </ul>
 </li>
 </ul>
@@ -310,5 +388,6 @@ Sphinx supports documenting code objects in several languages, namely Python, C,
     <script src="_static/doctools.js?v=888ff710"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/scripts/furo.js?v=32e29ea5"></script>
+    <script src="_static/tabs.js?v=3030b3cb"></script>
     </body>
 </html>

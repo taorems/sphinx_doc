@@ -192,7 +192,7 @@ The steps below are done by using the sphinx-autodoc extension. The sphinx-autod
 
 Here is the segment of the test:
 
-You can type this line ``.. autofuntion:: lumache.test_doc`` to generate the documentation for the ``lumache.test_doc()`` function.
+You can type this line ``.. autofunction:: lumache.test_doc`` to generate the documentation for the ``lumache.test_doc()`` function.
 
 .. autofunction:: lumache.test_doc
 
