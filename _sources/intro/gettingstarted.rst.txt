@@ -58,7 +58,6 @@ Now, to build the documentation site locally, run the following command:
 .. note::
    The `make html` command will generate the documentation in the `build/html` directory. To view the documentation, open the `index.html` file in a web browser. 
 
-When writing documentation for multiple applications, it is recommended to create a separate directory for each application and organise the repository. This is explained in the next section.
 
 Repository Structure
 --------------------
@@ -72,13 +71,18 @@ Repository Structure
    
 ..    Fig: Repository Structure
 
-If the project has two applications, app-1 and app-2, then create two directories, app-1 and app-2, alongside the documentation directory 'docs'. Create the same app-1 and app-2 directory under the `docs/source` directory as well. The directory structure should look like this:
+When writing documentation for multiple applications, it is recommended to create a separate directory for each application and organise the repository. 
+For instance, if the project has two applications, app-1 and app-2, then create two directories, app-1 and app-2, alongside the documentation directory 'docs'. Create the same app-1 and app-2 directory under the `docs/source` directory as well. 
+
+The directory structure should look something like this:
 
 .. code-block:: text
+   :caption: Directory Structure
     
    project_root/
    ├── .github/
    |   ├── workflows/
+   |       ├── doc.yml
    ├── app-1/
    │   ├── code/
    │       ├── python_files.py
@@ -105,6 +109,8 @@ If the project has two applications, app-1 and app-2, then create two directorie
    |           ├── usage.rst
    |           ├── api.rst
    |           ├── _static/
+   ├── requirements.txt
+   |── README.rst
 
 
 Configuring GitHub Pages
