@@ -14,13 +14,14 @@ The key focus points for this documentation are the followings:
 #. Lay out a structure for the documentation of multiple web applications within a single repository.
 #. Implement automatic code documentation from the source code.
 
-Scroll through the table of contents on the left to see what is available.
 
 .. toctree::
    :maxdepth: 2
    :caption: Introduction
+   :hidden:
 
-   intro
+   index
+   start
 
 .. toctree::
    :maxdepth: 2
@@ -45,10 +46,11 @@ Use Case
 
 The use case of such a documentation are as follows:
 
-1. To provide a single source of documentation for multiple web applications. 
-2. The documentation is generated automatically from the source code and is hosted on GitHub pages. This way, the documentation is always up-to-date with the source code and the developers do not have to spend time on writing documentation. 
-3. It is easily readable and accessible for the users of the application to validate the logic used in the application, rather then reading the source code. 
+#. To provide a single source of documentation for multiple web applications. 
+#. The documentation is generated automatically from the source code and is hosted on GitHub pages. This way, the documentation is always up-to-date with the source code and the developers do not have to spend time on writing documentation. 
+#. It is easily readable and accessible for the users of the application to validate the logic used in the application, rather then reading the source code. 
 
+Scroll through the table of contents on the left to see what is available.
 
 .. warning::
    This documentation is still under development and is not intended to be used as a reference for any application.
