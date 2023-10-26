@@ -20,8 +20,7 @@ The key focus points for this documentation are the followings:
    :caption: Introduction
    :hidden:
 
-   index
-   start
+   intro/start
 
 .. toctree::
    :maxdepth: 2
@@ -57,5 +56,5 @@ Scroll through the table of contents on the left to see what is available.
 
 .. note::
 
-   This documentation is built using `Sphinx <http://sphinx-doc.org/>`_ and `Read the Docs <https://readthedocs.org/>`_. The source code is hosted on GitHub.
-   Sphinx supports documenting code objects in several languages, namely Python, C, C++, JavaScript, and reStructuredText. Each of them can be documented using a series of directives and roles grouped by domain. 
+   This documentation is built using `Sphinx <http://sphinx-doc.org/>`_. The source code is hosted on GitHub.
+   Sphinx supports documenting code objects in several languages, namely Python, C, C++, JavaScript, and reStructuredText. Each of them can be documented using a series of directives and roles grouped by domain. More on this can be found `here <https://www.sphinx-doc.org/en/master/index.html>`_.
