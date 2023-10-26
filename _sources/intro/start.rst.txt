@@ -86,7 +86,7 @@ In order to setup the github-pages for automatic generation of documentation, th
    The `gh-pages` branch is not created by the user. It is created when the workflow is run via git-actions, which is activated when a push is made to the main branch as indicated in the doc.yml file. 
    After the `gh-pages` branch is created then set the GitHub pages deployment branch to `gh-pages` from the repository settings, as shown in the image below. 
 
-.. figure:: _static/gh-pages.jpg
+.. figure:: ../_static/gh-pages.jpg
    :align: center
    :width: 100%
    
