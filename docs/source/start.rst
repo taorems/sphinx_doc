@@ -1,19 +1,20 @@
-Introduction
-============
+Getting Started
+===============
 
 To create such a project, you need to create a new repository on GitHub, then clone it locally:
 
-```bash
-$ git clone repo_url
-```
+.. code-block:: bash
+
+   $ git clone repo_url
 
 Then, you need to create a new virtual environment and install the dependencies:
 
-```bash
-$ virtualenv venv
-$ source venv/bin/activate
-$ pip install -r requirements.txt
-```
+.. code-block:: bash
+
+   $ virtualenv venv
+   $ source venv/bin/activate
+   $ pip install -r requirements.txt
+
 
 Repository Structure
 --------------------
