@@ -1,17 +1,17 @@
 Getting Started
 ===============
 
-To create such a project, you need to create a new repository on GitHub, then clone it locally:
+To create such a project, first create a new repository on GitHub, then clone it locally:
 
 .. code-block:: bash
 
    $ git clone repo_url
 
-Then, you need to create a new virtual environment and install the dependencies:
+Then, create a new virtual environment and install the dependencies:
 
 .. code-block:: bash
 
-   $ virtualenv venv
+   $ python -m virtualenv venv
    $ source venv/bin/activate
    $ pip install -r requirements.txt
 
@@ -61,8 +61,8 @@ This is the structure of the repository which host multiple applications, for in
    |           ├── api.rst
    |           ├── _static/
 
-Configuration
--------------
+Configuring GitHub Pages
+------------------------
 
 In order to setup the github-pages for automatic generation of documentation, the following workflow is added:
 
