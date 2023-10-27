@@ -28,7 +28,7 @@ The key focus points for this documentation are the followings:
    :hidden:
 
    app-1/intro
-   app-1/usage
+   app-1/guide
    app-1/api
    app-1/frontend
 
@@ -38,6 +38,7 @@ The key focus points for this documentation are the followings:
    :hidden:
 
    app-2/intro
+   app-2/guide
    app-2/api
 
 Use Case
