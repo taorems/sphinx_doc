@@ -80,43 +80,44 @@ The directory structure should look something like this:
    :caption: Directory Structure
     
    project_root/
+   ├── requirements.txt
+   ├── README.rst
    ├── .github/
    |   ├── workflows/
-   |       ├── doc.yml
+   |   |   ├── doc.yml
    ├── app-1/
    │   ├── code/
-   │       ├── python_files.py
+   │   |   ├── python_files.py
    ├── app-2/
    │   ├── code/
-   |       ├── python_files.py
+   |   |   ├── python_files.py
    ├── docs/
    |   ├── make.bat
    |   ├── Makefile
    │   ├── build/
-   |       ├── html/
+   |   |   ├── html/
    │   ├── source/
-   │       ├── conf.py
-   |       ├── index.rst
-   |       ├── app-1
-   |       |   ├── intro.rst
-   |       |   ├── usage.rst
-   |       |   ├── api.rst
-   |       |   ├── frontend.rst
-   |       |   ├── _static/
-   |       |         ├── swaggerui/
-   |       ├── app-2
-   |           ├── intro.rst
-   |           ├── usage.rst
-   |           ├── api.rst
-   |           ├── _static/
-   ├── requirements.txt
-   |── README.rst
+   │   |   ├── conf.py
+   |   |   ├── index.rst
+   |   |   ├── app-1
+   |   |   |   ├── intro.rst
+   |   |   |   ├── usage.rst
+   |   |   |   ├── api.rst
+   |   |   |   ├── frontend.rst
+   |   |   |   ├── _static/
+   |   |   |         ├── swaggerui/
+   |   |   ├── app-2
+   |   |       ├── intro.rst
+   |   |       ├── usage.rst
+   |   |       ├── api.rst
+   |   |       ├── _static/
+   ...
 
 
 Configuring GitHub Pages
 ------------------------
 
-In order to setup the github-pages for automatic generation of documentation, the following workflow is added:
+In order to setup the github-pages for automatic generation of documentation, the following GitHub workflow is added:
 
 .. tabs::
 

@@ -162,13 +162,14 @@
 <p class="caption" role="heading"><span class="caption-text">app-1 Documentation</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../app-1/intro.html">Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../app-1/usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../app-1/guide.html">User Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../app-1/api.html">API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../app-1/frontend.html">Frontend</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">app-2 Documentation</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../app-2/intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../app-2/guide.html">Usage guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../app-2/api.html">API</a></li>
 </ul>
 
@@ -263,44 +264,45 @@ For instance, if the project has two applications, app-1 and app-2, then create 
 <div class="literal-block-wrapper docutils container" id="id1">
 <div class="code-block-caption"><span class="caption-text">Directory Structure</span><a class="headerlink" href="#id1" title="Link to this code">#</a></div>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>project_root/
+├── requirements.txt
+├── README.rst
 ├── .github/
 |   ├── workflows/
-|       ├── doc.yml
+|   |   ├── doc.yml
 ├── app-1/
 │   ├── code/
-│       ├── python_files.py
+│   |   ├── python_files.py
 ├── app-2/
 │   ├── code/
-|       ├── python_files.py
+|   |   ├── python_files.py
 ├── docs/
 |   ├── make.bat
 |   ├── Makefile
 │   ├── build/
-|       ├── html/
+|   |   ├── html/
 │   ├── source/
-│       ├── conf.py
-|       ├── index.rst
-|       ├── app-1
-|       |   ├── intro.rst
-|       |   ├── usage.rst
-|       |   ├── api.rst
-|       |   ├── frontend.rst
-|       |   ├── _static/
-|       |         ├── swaggerui/
-|       ├── app-2
-|           ├── intro.rst
-|           ├── usage.rst
-|           ├── api.rst
-|           ├── _static/
-├── requirements.txt
-|── README.rst
+│   |   ├── conf.py
+|   |   ├── index.rst
+|   |   ├── app-1
+|   |   |   ├── intro.rst
+|   |   |   ├── usage.rst
+|   |   |   ├── api.rst
+|   |   |   ├── frontend.rst
+|   |   |   ├── _static/
+|   |   |         ├── swaggerui/
+|   |   ├── app-2
+|   |       ├── intro.rst
+|   |       ├── usage.rst
+|   |       ├── api.rst
+|   |       ├── _static/
+...
 </pre></div>
 </div>
 </div>
 </section>
 <section id="configuring-github-pages">
 <h2>Configuring GitHub Pages<a class="headerlink" href="#configuring-github-pages" title="Link to this heading">#</a></h2>
-<p>In order to setup the github-pages for automatic generation of documentation, the following workflow is added:</p>
+<p>In order to setup the github-pages for automatic generation of documentation, the following GitHub workflow is added:</p>
 <div class="sphinx-tabs docutils container">
 <div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">Sphinx</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">Other</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><p>Since this project uses Sphinx,
 the following .yml workflow is added for GitHub Actions.</p>

@@ -3,7 +3,7 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="API" href="api.html" /><link rel="prev" title="Frontend" href="../app-1/frontend.html" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Usage guide" href="guide.html" /><link rel="prev" title="Frontend" href="../app-1/frontend.html" />
 
     <!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
         <title>Introduction - Test Sphinx Generator 1.0 documentation</title>
@@ -162,13 +162,14 @@
 <p class="caption" role="heading"><span class="caption-text">app-1 Documentation</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../app-1/intro.html">Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../app-1/usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../app-1/guide.html">User Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../app-1/api.html">API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../app-1/frontend.html">Frontend</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">app-2 Documentation</span></p>
 <ul class="current">
 <li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guide.html">Usage guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api.html">API</a></li>
 </ul>
 
@@ -207,29 +208,13 @@
           <section id="introduction">
 <h1>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h1>
 <p>This is the introduction page to the application-2.</p>
-<section id="quickstart">
-<h2>Quickstart<a class="headerlink" href="#quickstart" title="Link to this heading">#</a></h2>
-<p>This is a quickstart guide to get the application up and running.</p>
-<section id="dev-run">
-<h3>Dev Run<a class="headerlink" href="#dev-run" title="Link to this heading">#</a></h3>
-<p>To run an instance of the app with a database included, run the powershell script run.dev.ps1.</p>
-<p>To access the swagger interface go to <a class="reference external" href="http://localhost:8080/docs">http://localhost:8080/docs</a></p>
-<p>A utility script is provided to create an asset and add operations to it. This script is located in the /app/utils/ folder and is called add_asset.py. The fastapi server needs to be running for it to work. The script can be run with the following command:</p>
-<p><code class="docutils literal notranslate"><span class="pre">`bash</span>
-<span class="pre">docker</span> <span class="pre">exec</span> <span class="pre">CONTAINER_ID</span> <span class="pre">python</span> <span class="pre">./app/utils/add_asset.py</span>
-<span class="pre">`</span></code></p>
-<p>Where CONTAINER_ID is the ID of the container running the fastapi server, you can find this with <cite>docker ps</cite>.</p>
+<section id="what-is-application-2">
+<h2>What is application-2?<a class="headerlink" href="#what-is-application-2" title="Link to this heading">#</a></h2>
+<p>Application-2 is a simple application that does something.</p>
 </section>
-<section id="comment-operations">
-<h3>Comment operations<a class="headerlink" href="#comment-operations" title="Link to this heading">#</a></h3>
-<p>To keep track of comments, a separate database is created.</p>
-<p>The comment database is a list of comments, where each comment is a dictionary with the following keys:</p>
-<ul class="simple">
-<li><p><cite>comment</cite>: The comment itself</p></li>
-<li><p><cite>operation_id</cite>: The id of the operation that the comment is associated with</p></li>
-<li><p><cite>id</cite>: The id of the comment</p></li>
-</ul>
-</section>
+<section id="why-or-use-case">
+<h2>Why? or Use Case<a class="headerlink" href="#why-or-use-case" title="Link to this heading">#</a></h2>
+<p>This application is used to help customer automate the mundane task.</p>
 </section>
 </section>
 
@@ -238,12 +223,12 @@
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="api.html">
+          <a class="next-page" href="guide.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">API</div>
+                <div class="title">Usage guide</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
@@ -289,11 +274,8 @@
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">Introduction</a><ul>
-<li><a class="reference internal" href="#quickstart">Quickstart</a><ul>
-<li><a class="reference internal" href="#dev-run">Dev Run</a></li>
-<li><a class="reference internal" href="#comment-operations">Comment operations</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#what-is-application-2">What is application-2?</a></li>
+<li><a class="reference internal" href="#why-or-use-case">Why? or Use Case</a></li>
 </ul>
 </li>
 </ul>
