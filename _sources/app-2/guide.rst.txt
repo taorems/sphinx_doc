@@ -1,4 +1,4 @@
-Usage guide
+Usage Guide
 ===========
 
 Installation
@@ -31,6 +31,11 @@ Codebase Description
 ----------------------------
 
 Description on the codebase.
+
+Logic
+^^^^^
+
+The logic of the application is contained in the /app/logic/ folder.
 
 Comment operations
 ^^^^^^^^^^^^^^^^^^
