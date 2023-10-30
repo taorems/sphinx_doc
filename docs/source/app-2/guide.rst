@@ -1,18 +1,18 @@
 Usage Guide
-===========
+***********
 
 Installation
-------------
+============
 
 Installation guide.
 
 Quickstart
-----------
+==========
 
-This is a quickstart guide to get the application up and running.
+This is a quickstart guide to get the application up and running. To get started with the application, you need to first request access to the application via the portal.
 
 Dev Run
-^^^^^^^
+-------
 
 To run an instance of the app with a database included, run the powershell script run.dev.ps1.
 
@@ -28,38 +28,43 @@ Where CONTAINER_ID is the ID of the container running the fastapi server, you ca
 
 
 Codebase Description
-----------------------------
+====================
 
 Description on the codebase.
 
+Assets
+------	
+
+What are assets? How are they stored?
+
+Operations
+^^^^^^^^^^
+
+Operations performed on assets are called Operations. What are operations? How are they stored? 
+
 Logic
-^^^^^
+-----
 
-The logic of the application is contained in the /app/logic/ folder.
+The logic of the application is contained in the /app/logic/ folder. Here, decription on the logic used in the application is provided.
 
-Comment operations
-^^^^^^^^^^^^^^^^^^
 
-To keep track of comments, a separate database is created.
+CRUD Operations
+---------------
 
-The comment database is a list of comments, where each comment is a dictionary with the following keys:
-
-- `comment`: The comment itself
-- `operation_id`: The id of the operation that the comment is associated with
-- `id`: The id of the comment
+Description on the CRUD operations.
 
 
 Frontend
---------
+========
 
 Dashboard
-^^^^^^^^^
+---------
 
 The dashboard is the landing page that displays the current status of the documentation. 
 
 Description on the dashboard.
 
 Operations
-^^^^^^^^^^
+----------
 
 Operations is the page that shows an overview of the operations that have been performed on the data.
