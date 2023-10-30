@@ -17,7 +17,6 @@ The key focus points for this documentation are the followings:
 
 .. toctree::
    :maxdepth: 2
-   :caption: Introduction
    :hidden:
 
    intro/gettingstarted
