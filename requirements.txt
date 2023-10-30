@@ -3,6 +3,6 @@ piccolo_theme
 furo
 sphinx-rtd-theme
 sphinxcontrib-openapi
-sphinxcontrib-swaggerui==0.1.0
+# sphinxcontrib-swaggerui==0.1.0
 swagger-plugin-for-sphinx
 sphinx-tabs
