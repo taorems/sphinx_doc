@@ -36,7 +36,7 @@ extensions = [
     'sphinx.ext.apidoc',
     'sphinxcontrib.openapi',
     'sphinxcontrib.httpdomain',
-    # 'sphinxcontrib.swaggerui',
+    'sphinxcontrib.swaggerui',
     'swagger_plugin_for_sphinx',
     'sphinx_tabs.tabs',
 ]
