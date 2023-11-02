@@ -8,12 +8,15 @@ POWERS = np.arange(3, 16)
 class LegHandelingOperation:
     """This is a class for handling leg operation. 
     
-    Attributes
-    ----------
-    attr1: load (float): The load on the leg.
-    attr2: distance (float): The distance the leg has moved.
-    attr3: is_in_bin_number (int): The bin number the operation is in.
-    attr4: config_bin_settings (dict): The bin settings.
+    :param load: The load on the leg.
+    :type load: float
+    :param distance: The distance the leg has moved.
+    :type distance: float
+    :param config_bin_settings: The configuration settings for the bin.
+    :type config_bin_settings: dict
+    :param is_in_bin_number: The bin number the operation is in.
+    :type is_in_bin_number: int
+
     
     """
     def __init__(
@@ -45,10 +48,9 @@ class LegHandelingOperation:
     def apply_mapping(self, mapping_lifting, mapping_lowering) -> None:
         """This method reads each operation and maps them to either lifting or lowering based on the positive or negative distance value, respectively.
 
-        Args
-        ----
-        arg1: mapping_lifting: The mapping for lifting operations.
-        arg2: mapping_lowering: The mapping for lowering operations.
+        Args:
+            mapping_lifting: The mapping for lifting operations.
+            mapping_lowering: The mapping for lowering operations.
         """
         
         if self.distance >= 0:
