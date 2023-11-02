@@ -47,12 +47,13 @@ Logic
 
 The logic of the application is contained in the /app/logic/ folder. Here, decription on the logic used in the application is provided.
 
-This is with ``.. autoclass:: logic.LegHandelingOperation``, ``:members: apply_mapping``, ``:undoc-members: calculate_digitize`` and ``:automethod:: calculate_equivalent_distance``:
+This is with ``.. autoclass:: logic.LegHandelingOperation``, ``:members: apply_mapping``, ``:undoc-members: calculate_digitize``, ``.. automethod:: calculate_equivalent_distance`` and ``.. method:: calculate_equivalent_distance``:
 
 .. autoclass:: logic.LegHandelingOperation
     :members: apply_mapping
     :undoc-members: calculate_digitize
-    :automethod:: calculate_equivalent_distance
+    .. automethod:: calculate_equivalent_distance
+    .. method:: calculate_equivalent_distance
 
 This is with ``.. autofunction:: logic.add``:
 
@@ -62,12 +63,12 @@ This is with ``.. autofunction:: logic.LegHandelingOperation.apply_mapping``:
 
 .. autofunction:: logic.LegHandelingOperation.apply_mapping
 
-This is with ``.. automodule::`` and ``:members:``:
+This is with ``.. automodule:: logic.LegHandelingOperation`` and ``:members: apply_mapping, calculate_equivalent_distance``:
 
 .. automodule:: logic.LegHandelingOperation
-    :members:
+    :members: apply_mapping, calculate_equivalent_distance
 
-This is with ``.. automudule::``:
+This is with ``.. automodule:: logic.LegHandelingOperation``:
 
 .. automodule:: logic.LegHandelingOperation
 
