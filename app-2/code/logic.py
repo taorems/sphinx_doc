@@ -27,10 +27,13 @@ class LegHandelingOperation:
     ):
         """Initializes LegHandelingOperation with load, distance, and bin settings.
 
-        Args:
-            load (float): The load on the leg.
-            distance (float): The distance the leg has moved.
-            config_bin_settings (dict): The configuration settings for the bin.
+
+        :arg load: The load on the leg.
+        :type load: float
+        :arg distance: The distance the leg has moved.
+        :type distance: float
+        :arg config_bin_settings: The configuration settings for the bin.
+        :type config_bin_settings: dict
         """
         self.load = load
         self.distance = distance
@@ -48,9 +51,8 @@ class LegHandelingOperation:
     def apply_mapping(self, mapping_lifting, mapping_lowering) -> None:
         """This method reads each operation and maps them to either lifting or lowering based on the positive or negative distance value, respectively.
 
-        Args:
-            mapping_lifting: The mapping for lifting operations.
-            mapping_lowering: The mapping for lowering operations.
+        :param mapping_lifting: The mapping for lifting operations.
+        :param mapping_lowering: The mapping for lowering operations.
         """
         
         if self.distance >= 0:
@@ -61,8 +63,8 @@ class LegHandelingOperation:
     def calculate_equivalent_distance(self, max_power_asset) -> float:
         """Calculates the equivalent distance for the leg operation.
 
-        Args:
-            max_power_asset: The maximum power of the asset.
+        :arg max_power_asset: The maximum power of the asset.
+        :arg type max_power_asset: int
 
         Returns:
             The equivalent distance for the leg operation.
@@ -104,9 +106,10 @@ def add(x, y):
     """
     Perform addition of two numbers.
 
-    Args:
-        x (float or int): The first number.
-        y (float or int): The second number.
+    :arg x: The first number.
+    :type x: float or int
+    :arg y: The second number.
+    :type y: float or int
 
     Returns:
         float or int: The result of the addition operation.
