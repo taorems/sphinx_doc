@@ -53,9 +53,8 @@ This is with ``.. autoclass:: logic.LegHandelingOperation``, ``:members: apply_m
     :members: apply_mapping, calculate_equivalent_distance
     :undoc-members: calculate_digitize
 
-    .. automethod:: calculate_equivalent_distance
+``.. automethod:: calculate_equivalent_distance`` can be used inside ``.. autoclass::`` to override a method of a class when it is hidden. Haven't tested this yet.
     
-    .. method:: calculate_equivalent_distance
 
 This is with ``.. autofunction:: logic.add``:
 
@@ -75,6 +74,7 @@ This is with ``.. automodule:: logic.LegHandelingOperation``:
 
 .. automodule:: logic.LegHandelingOperation
 
+``.. automodule:: logic.LegHandelingOperation`` directive doesn't return the module name but the module content. So its better to use ``.. autoclass:: logic.LegHandelingOperation`` directive.
 
 CRUD Operations
 ---------------
