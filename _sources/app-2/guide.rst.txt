@@ -47,7 +47,7 @@ Logic
 
 The logic of the application is contained in the /app/logic/ folder. Here, decription on the logic used in the application is provided.
 
-.. auotoclass:: logic.LegHandelingOperation
+.. autoclass:: logic.LegHandelingOperation
     :members: apply_mapping
 
 
