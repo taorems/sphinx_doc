@@ -243,21 +243,25 @@
 <dt class="sig sig-object py" id="logic.LegHandelingOperation">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">logic.</span></span><span class="sig-name descname"><span class="pre">LegHandelingOperation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">load</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">distance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">config_bin_settings</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#logic.LegHandelingOperation" title="Link to this definition">#</a></dt>
 <dd><p>This is a class for handling leg operation.</p>
-<section id="attributes">
-<h4>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">#</a></h4>
-<p>attr1: load (float): The load on the leg.
-attr2: distance (float): The distance the leg has moved.
-attr3: is_in_bin_number (int): The bin number the operation is in.
-attr4: config_bin_settings (dict): The bin settings.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>load</strong> (<em>float</em>) – The load on the leg.</p></li>
+<li><p><strong>distance</strong> (<em>float</em>) – The distance the leg has moved.</p></li>
+<li><p><strong>config_bin_settings</strong> (<em>dict</em>) – The configuration settings for the bin.</p></li>
+<li><p><strong>is_in_bin_number</strong> (<em>int</em>) – The bin number the operation is in.</p></li>
+</ul>
+</dd>
+</dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="logic.LegHandelingOperation.apply_mapping">
 <span class="sig-name descname"><span class="pre">apply_mapping</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mapping_lifting</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mapping_lowering</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#logic.LegHandelingOperation.apply_mapping" title="Link to this definition">#</a></dt>
 <dd><p>This method reads each operation and maps them to either lifting or lowering based on the positive or negative distance value, respectively.</p>
-<section id="args">
-<h5>Args<a class="headerlink" href="#args" title="Link to this heading">#</a></h5>
-<p>arg1: mapping_lifting: The mapping for lifting operations.
-arg2: mapping_lowering: The mapping for lowering operations.</p>
-</section>
+<dl class="simple">
+<dt>Args:</dt><dd><p>mapping_lifting: The mapping for lifting operations.
+mapping_lowering: The mapping for lowering operations.</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
@@ -272,7 +276,6 @@ arg2: mapping_lowering: The mapping for lowering operations.</p>
 </dl>
 </dd></dl>
 
-</section>
 </dd></dl>
 
 <p><code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">automethod::</span> <span class="pre">calculate_equivalent_distance</span></code> can be used inside <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">autoclass::</span></code> to override a method of a class when it is hidden. Haven’t tested this yet.</p>
@@ -295,31 +298,50 @@ y (float or int): The second number.</p>
 <dt class="sig sig-object py" id="id0">
 <span class="sig-prename descclassname"><span class="pre">logic.LegHandelingOperation.</span></span><span class="sig-name descname"><span class="pre">apply_mapping</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mapping_lifting</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mapping_lowering</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#id0" title="Link to this definition">#</a></dt>
 <dd><p>This method reads each operation and maps them to either lifting or lowering based on the positive or negative distance value, respectively.</p>
-<section id="id1">
-<h4>Args<a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
-<p>arg1: mapping_lifting: The mapping for lifting operations.
-arg2: mapping_lowering: The mapping for lowering operations.</p>
-</section>
+<dl class="simple">
+<dt>Args:</dt><dd><p>mapping_lifting: The mapping for lifting operations.
+mapping_lowering: The mapping for lowering operations.</p>
+</dd>
+</dl>
 </dd></dl>
 
 <p>This is with <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">automodule::</span> <span class="pre">logic.LegHandelingOperation</span></code> and <code class="docutils literal notranslate"><span class="pre">:members:</span> <span class="pre">apply_mapping,</span> <span class="pre">calculate_equivalent_distance</span></code>:</p>
 <p>This is a class for handling leg operation.</p>
-<section id="id2">
-<h4>Attributes<a class="headerlink" href="#id2" title="Link to this heading">#</a></h4>
-<p>attr1: load (float): The load on the leg.
-attr2: distance (float): The distance the leg has moved.
-attr3: is_in_bin_number (int): The bin number the operation is in.
-attr4: config_bin_settings (dict): The bin settings.</p>
-</section>
+<dl class="field-list simple">
+<dt class="field-odd">param load<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The load on the leg.</p>
+</dd>
+<dt class="field-even">type load<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param distance<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The distance the leg has moved.</p>
+</dd>
+<dt class="field-even">type distance<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param config_bin_settings<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The configuration settings for the bin.</p>
+</dd>
+<dt class="field-even">type config_bin_settings<span class="colon">:</span></dt>
+<dd class="field-even"><p>dict</p>
+</dd>
+<dt class="field-odd">param is_in_bin_number<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The bin number the operation is in.</p>
+</dd>
+<dt class="field-even">type is_in_bin_number<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
 <dl class="py function">
 <dt class="sig sig-object py">
 <span class="sig-prename descclassname"><span class="pre">logic.LegHandelingOperation.</span></span><span class="sig-name descname"><span class="pre">apply_mapping</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mapping_lifting</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mapping_lowering</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span></dt>
 <dd><p>This method reads each operation and maps them to either lifting or lowering based on the positive or negative distance value, respectively.</p>
-<section id="id3">
-<h4>Args<a class="headerlink" href="#id3" title="Link to this heading">#</a></h4>
-<p>arg1: mapping_lifting: The mapping for lifting operations.
-arg2: mapping_lowering: The mapping for lowering operations.</p>
-</section>
+<dl class="simple">
+<dt>Args:</dt><dd><p>mapping_lifting: The mapping for lifting operations.
+mapping_lowering: The mapping for lowering operations.</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py function">
@@ -336,13 +358,32 @@ arg2: mapping_lowering: The mapping for lowering operations.</p>
 
 <p>This is with <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">automodule::</span> <span class="pre">logic.LegHandelingOperation</span></code>:</p>
 <p id="module-logic.LegHandelingOperation">This is a class for handling leg operation.</p>
-<section id="id4">
-<h4>Attributes<a class="headerlink" href="#id4" title="Link to this heading">#</a></h4>
-<p>attr1: load (float): The load on the leg.
-attr2: distance (float): The distance the leg has moved.
-attr3: is_in_bin_number (int): The bin number the operation is in.
-attr4: config_bin_settings (dict): The bin settings.</p>
-</section>
+<dl class="field-list simple">
+<dt class="field-odd">param load<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The load on the leg.</p>
+</dd>
+<dt class="field-even">type load<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param distance<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The distance the leg has moved.</p>
+</dd>
+<dt class="field-even">type distance<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param config_bin_settings<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The configuration settings for the bin.</p>
+</dd>
+<dt class="field-even">type config_bin_settings<span class="colon">:</span></dt>
+<dd class="field-even"><p>dict</p>
+</dd>
+<dt class="field-odd">param is_in_bin_number<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The bin number the operation is in.</p>
+</dd>
+<dt class="field-even">type is_in_bin_number<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
 <p><code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">automodule::</span> <span class="pre">logic.LegHandelingOperation</span></code> directive doesn’t return the module name but the module content. So its better to use <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">autoclass::</span> <span class="pre">logic.LegHandelingOperation</span></code> directive.</p>
 </section>
 <section id="crud-operations">
@@ -357,8 +398,8 @@ attr4: config_bin_settings (dict): The bin settings.</p>
 <p>The dashboard is the landing page that displays the current status of the documentation.</p>
 <p>Description on the dashboard.</p>
 </section>
-<section id="id5">
-<h3>Operations<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<section id="id1">
+<h3>Operations<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
 <p>Operations is the page that shows an overview of the operations that have been performed on the data.</p>
 </section>
 </section>
@@ -438,8 +479,6 @@ attr4: config_bin_settings (dict): The bin settings.</p>
 </li>
 <li><a class="reference internal" href="#logic.add"><code class="docutils literal notranslate"><span class="pre">add()</span></code></a></li>
 <li><a class="reference internal" href="#id0"><code class="docutils literal notranslate"><span class="pre">apply_mapping()</span></code></a></li>
-<li><a class="reference internal" href="#id2">Attributes</a></li>
-<li><a class="reference internal" href="#id4">Attributes</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#crud-operations">CRUD Operations</a></li>
@@ -447,7 +486,7 @@ attr4: config_bin_settings (dict): The bin settings.</p>
 </li>
 <li><a class="reference internal" href="#frontend">Frontend</a><ul>
 <li><a class="reference internal" href="#dashboard">Dashboard</a></li>
-<li><a class="reference internal" href="#id5">Operations</a></li>
+<li><a class="reference internal" href="#id1">Operations</a></li>
 </ul>
 </li>
 </ul>
