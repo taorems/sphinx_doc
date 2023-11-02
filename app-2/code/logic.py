@@ -28,11 +28,11 @@ class LegHandelingOperation:
         """Initializes LegHandelingOperation with load, distance, and bin settings.
 
 
-        :arg load: The load on the leg.
+        :param load: The load on the leg.
         :type load: float
-        :arg distance: The distance the leg has moved.
+        :param distance: The distance the leg has moved.
         :type distance: float
-        :arg config_bin_settings: The configuration settings for the bin.
+        :param config_bin_settings: The configuration settings for the bin.
         :type config_bin_settings: dict
         """
         self.load = load
@@ -63,8 +63,8 @@ class LegHandelingOperation:
     def calculate_equivalent_distance(self, max_power_asset) -> float:
         """Calculates the equivalent distance for the leg operation.
 
-        :arg max_power_asset: The maximum power of the asset.
-        :arg type max_power_asset: int
+        :param max_power_asset: The maximum power of the asset.
+        :type max_power_asset: int
 
         Returns:
             The equivalent distance for the leg operation.
@@ -106,9 +106,9 @@ def add(x, y):
     """
     Perform addition of two numbers.
 
-    :arg x: The first number.
+    :param x: The first number.
     :type x: float or int
-    :arg y: The second number.
+    :param y: The second number.
     :type y: float or int
 
     Returns:
