@@ -95,3 +95,16 @@ class LegHandelingOperation:
     def __str__(self) -> str:
         return f"""LegHandelingOperation(load={self.load},
           distance={self.distance}, is_in_bin_number={self.is_in_bin_number})"""
+
+def add(x, y):
+    """
+    Perform addition of two numbers.
+
+    Args:
+        x (float or int): The first number.
+        y (float or int): The second number.
+
+    Returns:
+        float or int: The result of the addition operation.
+    """
+    return x + y
