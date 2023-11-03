@@ -8,7 +8,8 @@ POWERS = np.arange(3, 16)
 class LegHandelingOperation:
     """This is a class for handling leg operation. 
     
-    :param load(float): The load on the leg.
+    :param load: The load on the leg.
+    :type load: float
     :param distance: The distance the leg has moved.
     :type distance: float
     :param config_bin_settings: The configuration settings for the bin.
