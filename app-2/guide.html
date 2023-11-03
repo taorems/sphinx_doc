@@ -246,7 +246,7 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>load</strong> (<em>float</em>) – The load on the leg.</p></li>
+<li><p><strong>load</strong><strong>(</strong><strong>float</strong><strong>)</strong> – The load on the leg.</p></li>
 <li><p><strong>distance</strong> (<em>float</em>) – The distance the leg has moved.</p></li>
 <li><p><strong>config_bin_settings</strong> (<em>dict</em>) – The configuration settings for the bin.</p></li>
 <li><p><strong>is_in_bin_number</strong> (<em>int</em>) – The bin number the operation is in.</p></li>
@@ -319,91 +319,6 @@
 </dl>
 </dd></dl>
 
-<p>This is with <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">automodule::</span> <span class="pre">logic.LegHandelingOperation</span></code> and <code class="docutils literal notranslate"><span class="pre">:members:</span> <span class="pre">apply_mapping,</span> <span class="pre">calculate_equivalent_distance</span></code>:</p>
-<p>This is a class for handling leg operation.</p>
-<dl class="field-list simple">
-<dt class="field-odd">param load<span class="colon">:</span></dt>
-<dd class="field-odd"><p>The load on the leg.</p>
-</dd>
-<dt class="field-even">type load<span class="colon">:</span></dt>
-<dd class="field-even"><p>float</p>
-</dd>
-<dt class="field-odd">param distance<span class="colon">:</span></dt>
-<dd class="field-odd"><p>The distance the leg has moved.</p>
-</dd>
-<dt class="field-even">type distance<span class="colon">:</span></dt>
-<dd class="field-even"><p>float</p>
-</dd>
-<dt class="field-odd">param config_bin_settings<span class="colon">:</span></dt>
-<dd class="field-odd"><p>The configuration settings for the bin.</p>
-</dd>
-<dt class="field-even">type config_bin_settings<span class="colon">:</span></dt>
-<dd class="field-even"><p>dict</p>
-</dd>
-<dt class="field-odd">param is_in_bin_number<span class="colon">:</span></dt>
-<dd class="field-odd"><p>The bin number the operation is in.</p>
-</dd>
-<dt class="field-even">type is_in_bin_number<span class="colon">:</span></dt>
-<dd class="field-even"><p>int</p>
-</dd>
-</dl>
-<dl class="py function">
-<dt class="sig sig-object py">
-<span class="sig-prename descclassname"><span class="pre">logic.LegHandelingOperation.</span></span><span class="sig-name descname"><span class="pre">apply_mapping</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mapping_lifting</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mapping_lowering</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span></dt>
-<dd><p>This method reads each operation and maps them to either lifting or lowering based on the positive or negative distance value, respectively.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>mapping_lifting</strong> – The mapping for lifting operations.</p></li>
-<li><p><strong>mapping_lowering</strong> – The mapping for lowering operations.</p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py">
-<span class="sig-prename descclassname"><span class="pre">logic.LegHandelingOperation.</span></span><span class="sig-name descname"><span class="pre">calculate_equivalent_distance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_power_asset</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span></dt>
-<dd><p>Calculates the equivalent distance for the leg operation.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>max_power_asset</strong> (<em>int</em>) – The maximum power of the asset.</p>
-</dd>
-</dl>
-<dl class="simple">
-<dt>Returns:</dt><dd><p>The equivalent distance for the leg operation.</p>
-</dd>
-</dl>
-</dd></dl>
-
-<p>This is with <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">automodule::</span> <span class="pre">logic.LegHandelingOperation</span></code>:</p>
-<p id="module-logic.LegHandelingOperation">This is a class for handling leg operation.</p>
-<dl class="field-list simple">
-<dt class="field-odd">param load<span class="colon">:</span></dt>
-<dd class="field-odd"><p>The load on the leg.</p>
-</dd>
-<dt class="field-even">type load<span class="colon">:</span></dt>
-<dd class="field-even"><p>float</p>
-</dd>
-<dt class="field-odd">param distance<span class="colon">:</span></dt>
-<dd class="field-odd"><p>The distance the leg has moved.</p>
-</dd>
-<dt class="field-even">type distance<span class="colon">:</span></dt>
-<dd class="field-even"><p>float</p>
-</dd>
-<dt class="field-odd">param config_bin_settings<span class="colon">:</span></dt>
-<dd class="field-odd"><p>The configuration settings for the bin.</p>
-</dd>
-<dt class="field-even">type config_bin_settings<span class="colon">:</span></dt>
-<dd class="field-even"><p>dict</p>
-</dd>
-<dt class="field-odd">param is_in_bin_number<span class="colon">:</span></dt>
-<dd class="field-odd"><p>The bin number the operation is in.</p>
-</dd>
-<dt class="field-even">type is_in_bin_number<span class="colon">:</span></dt>
-<dd class="field-even"><p>int</p>
-</dd>
-</dl>
 <p><code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">automodule::</span> <span class="pre">logic.LegHandelingOperation</span></code> directive doesn’t return the module name but the module content. So its better to use <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">autoclass::</span> <span class="pre">logic.LegHandelingOperation</span></code> directive.</p>
 </section>
 <section id="crud-operations">
