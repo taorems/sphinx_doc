@@ -47,7 +47,7 @@ Logic
 
 The logic of the application is contained in the /app/logic/ folder. Here, decription on the logic used in the application is provided.
 
-This is with ``.. autoclass:: logic.LegHandelingOperation``, ``:members: apply_mapping, calculate_equivalent_distance``, ``:undoc-members: calculate_digitize``, ``.. automethod:: calculate_equivalent_distance`` and ``.. method:: calculate_equivalent_distance``:
+This is with ``.. autoclass:: logic.LegHandelingOperation`` and ``:members: apply_mapping, calculate_equivalent_distance``:
 
 .. autoclass:: logic.LegHandelingOperation
     :members: apply_mapping, calculate_equivalent_distance
