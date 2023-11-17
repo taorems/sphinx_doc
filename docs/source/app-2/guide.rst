@@ -47,34 +47,38 @@ Logic
 
 The logic of the application is contained in the /app/logic/ folder. Here, decription on the logic used in the application is provided.
 
-This is with ``.. autoclass:: logic.LegHandelingOperation`` and ``:members: apply_mapping, calculate_equivalent_distance``:
+.. automodule:: logic.py
+    :members:
 
-.. autoclass:: logic.LegHandelingOperation
-    :members: apply_mapping, calculate_equivalent_distance
-    :undoc-members: calculate_digitize
 
-``.. automethod:: calculate_equivalent_distance`` can be used inside ``.. autoclass::`` to override a method of a class when it is hidden. Haven't tested this yet.
+.. This is with ``.. autoclass:: logic.LegHandelingOperation`` and ``:members: apply_mapping, calculate_equivalent_distance``:
+
+.. .. autoclass:: logic.LegHandelingOperation
+..     :members: apply_mapping, calculate_equivalent_distance
+..     :undoc-members: calculate_digitize
+
+.. ``.. automethod:: calculate_equivalent_distance`` can be used inside ``.. autoclass::`` to override a method of a class when it is hidden. Haven't tested this yet.
     
 
-This is with ``.. autofunction:: logic.add``:
+.. This is with ``.. autofunction:: logic.add``:
 
-.. autofunction:: logic.add
+.. .. autofunction:: logic.add
 
-This is with ``.. autofunction:: logic.LegHandelingOperation.apply_mapping``:
+.. This is with ``.. autofunction:: logic.LegHandelingOperation.apply_mapping``:
 
-.. autofunction:: logic.LegHandelingOperation.apply_mapping
+.. .. autofunction:: logic.LegHandelingOperation.apply_mapping
 
-.. This is with ``.. automodule:: logic.LegHandelingOperation`` and ``:members: apply_mapping, calculate_equivalent_distance``:
+.. .. This is with ``.. automodule:: logic.LegHandelingOperation`` and ``:members: apply_mapping, calculate_equivalent_distance``:
 
-.. .. automodule:: logic.LegHandelingOperation
-..     :members: apply_mapping, calculate_equivalent_distance
-..     :no-index:
+.. .. .. automodule:: logic.LegHandelingOperation
+.. ..     :members: apply_mapping, calculate_equivalent_distance
+.. ..     :no-index:
 
-.. This is with ``.. automodule:: logic.LegHandelingOperation``:
+.. .. This is with ``.. automodule:: logic.LegHandelingOperation``:
 
-.. .. automodule:: logic.LegHandelingOperation
+.. .. .. automodule:: logic.LegHandelingOperation
 
-``.. automodule:: logic.LegHandelingOperation`` directive doesn't return the module name but the module content. So its better to use ``.. autoclass:: logic.LegHandelingOperation`` directive.
+.. ``.. automodule:: logic.LegHandelingOperation`` directive doesn't return the module name but the module content. So its better to use ``.. autoclass:: logic.LegHandelingOperation`` directive.
 
 CRUD Operations
 ---------------
