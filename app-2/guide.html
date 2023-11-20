@@ -227,13 +227,22 @@
 <section id="codebase-description">
 <h2>Codebase Description<a class="headerlink" href="#codebase-description" title="Link to this heading">#</a></h2>
 <p>Description on the codebase.</p>
-<section id="assets">
-<h3>Assets<a class="headerlink" href="#assets" title="Link to this heading">#</a></h3>
+<section id="assets-and-operations">
+<h3>Assets and Operations<a class="headerlink" href="#assets-and-operations" title="Link to this heading">#</a></h3>
 <p>What are assets? How are they stored?</p>
-<section id="operations">
-<h4>Operations<a class="headerlink" href="#operations" title="Link to this heading">#</a></h4>
-<p>Operations performed on assets are called Operations. What are operations? How are they stored?</p>
-</section>
+<dl class="py class" id="module-models">
+<dt class="sig sig-object py" id="models.Asset">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">models.</span></span><span class="sig-name descname"><span class="pre">Asset</span></span><a class="headerlink" href="#models.Asset" title="Link to this definition">#</a></dt>
+<dd><p>Assets are the offshore units for which the jacking system data are being collected.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="models.Operation">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">models.</span></span><span class="sig-name descname"><span class="pre">Operation</span></span><a class="headerlink" href="#models.Operation" title="Link to this definition">#</a></dt>
+<dd><p>Operations performed by the asset are called Operations. This includes operations such as leg lowering, leg lifting, platform lowering, platform lifting, preload lowering, preload lifting, etc. 
+The load and distance data for each operation is collected and stored in the database.</p>
+</dd></dl>
+
 </section>
 <section id="logic">
 <h3>Logic<a class="headerlink" href="#logic" title="Link to this heading">#</a></h3>
@@ -327,8 +336,8 @@ The leg data includes the load and the distance travelled by the leg. The config
 <p>The dashboard is the landing page that displays the current status of the documentation.</p>
 <p>Description on the dashboard.</p>
 </section>
-<section id="id1">
-<h3>Operations<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<section id="operations">
+<h3>Operations<a class="headerlink" href="#operations" title="Link to this heading">#</a></h3>
 <p>Operations is the page that shows an overview of the operations that have been performed on the data.</p>
 </section>
 </section>
@@ -396,8 +405,9 @@ The leg data includes the load and the distance travelled by the leg. The config
 </ul>
 </li>
 <li><a class="reference internal" href="#codebase-description">Codebase Description</a><ul>
-<li><a class="reference internal" href="#assets">Assets</a><ul>
-<li><a class="reference internal" href="#operations">Operations</a></li>
+<li><a class="reference internal" href="#assets-and-operations">Assets and Operations</a><ul>
+<li><a class="reference internal" href="#models.Asset"><code class="docutils literal notranslate"><span class="pre">Asset</span></code></a></li>
+<li><a class="reference internal" href="#models.Operation"><code class="docutils literal notranslate"><span class="pre">Operation</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#logic">Logic</a><ul>
@@ -415,7 +425,7 @@ The leg data includes the load and the distance travelled by the leg. The config
 </li>
 <li><a class="reference internal" href="#frontend">Frontend</a><ul>
 <li><a class="reference internal" href="#dashboard">Dashboard</a></li>
-<li><a class="reference internal" href="#id1">Operations</a></li>
+<li><a class="reference internal" href="#operations">Operations</a></li>
 </ul>
 </li>
 </ul>
