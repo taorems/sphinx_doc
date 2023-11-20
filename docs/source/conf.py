@@ -15,6 +15,7 @@ import os
 sys.path.insert(0, pathlib.Path(__file__).parents[2].resolve().as_posix())
 sys.path.insert(0, os.path.abspath('../../app-1/code'))
 sys.path.insert(0, os.path.abspath('../../app-2/code'))
+sys.path.insert(0, os.path.abspath('../../app-2/models'))
 
 project = 'Test Sphinx Generator'
 copyright = '2023, Sunny'

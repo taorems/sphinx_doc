@@ -1,1 +1,1 @@
-from .logic import Logic
+from .logic import LegHandelingOperation, add
