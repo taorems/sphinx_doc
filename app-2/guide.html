@@ -325,23 +325,16 @@ The leg data includes the load and the distance travelled by the leg. The config
 <dl class="py function">
 <dt class="sig sig-object py" id="logic.calculate_factors">
 <span class="sig-prename descclassname"><span class="pre">logic.</span></span><span class="sig-name descname"><span class="pre">calculate_factors</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config_bin_settings</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span></span></span><a class="headerlink" href="#logic.calculate_factors" title="Link to this definition">#</a></dt>
-<dd><blockquote>
-<div><p>This method calculates the factors for each load bins. It uses the design pinion loads and distances, substitutes them in the following equation:</p>
-<blockquote>
-<div><div class="math-wrapper docutils container">
+<dd><p>This method calculates the factors for each load bins. It uses the design pinion loads and distances, substitutes them in the following equation:</p>
+<div class="math-wrapper docutils container">
 <div class="math notranslate nohighlight">
-\[Damage = \sum_{i=1}^{n} {d_i} * {L_i}^m = 1 \\]</div>
+\[Damage  &amp;= \sum_{i=1}^{n} [{d_i} * {L_i}^m] = 1 \]</div>
 </div>
-</div></blockquote>
 <p>where <span class="math notranslate nohighlight">\(d_i\)</span> is the design distance, <span class="math notranslate nohighlight">\(L_i\)</span> is the design pinion load for each bin and :math: <cite>m</cite> is the power. The factors are then calculated as follows:</p>
-<blockquote>
-<div><div class="math-wrapper docutils container">
+<div class="math-wrapper docutils container">
 <div class="math notranslate nohighlight">
-\[factor = \]</div>
+\[factor = 1 / damage\]</div>
 </div>
-</div></blockquote>
-</div></blockquote>
-<p>rac{1}{damage}</p>
 </dd></dl>
 
 </section>
