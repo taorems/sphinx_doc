@@ -32,10 +32,8 @@ Codebase Description
 
 Description on the codebase.
 
-Assets and Operations
----------------------	
-
-What are assets? How are they stored?
+Few Terminologies
+-----------------	
 
 .. automodule:: models
     :members:
