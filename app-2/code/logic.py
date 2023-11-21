@@ -121,6 +121,11 @@ def calculate_factors(config_bin_settings: dict) -> np.ndarray:
     .. math::
         factor = 1 / {total\ damage}
 
+    :param config_bin_settings: The configuration settings for the bins. It includes the load bin settings, the bin mapping for lifting and lowering operations, and the bins for design pinion loads and distances.
+    :type config_bin_settings: dict
+
+    :returns: The factors for each load bin.
+    :rtype: array
     """
     all_damages = np.array(config_bin_settings["bin_distances"]) * np.power(
         config_bin_settings["bin_pinion_loads"],
