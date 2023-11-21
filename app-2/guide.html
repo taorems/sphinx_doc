@@ -328,12 +328,12 @@ The leg data includes the load and the distance travelled by the leg. The config
 <dd><p>This method calculates the factors for each load bins. It uses the design pinion loads and distances, substitutes them in the following equation:</p>
 <div class="math-wrapper docutils container">
 <div class="math notranslate nohighlight">
-\[Damage  = \sum_{i=1}^{n} [{d_i} * {L_i}^m] = 1 \]</div>
+\[Total damage  = \sum_{i=1}^{n} [{factor_i} * {d_i} * {L_i}^m] = 1\]</div>
 </div>
-<p>where <span class="math notranslate nohighlight">\(d_i\)</span> is the design distance, <span class="math notranslate nohighlight">\(L_i\)</span> is the design pinion load for each bin and <span class="math notranslate nohighlight">\(m\)</span> is the power. The factors are then calculated as follows:</p>
+<p>where <span class="math notranslate nohighlight">\(factor_i\)</span> is the factor, <span class="math notranslate nohighlight">\(d_i\)</span> is the design distance and <span class="math notranslate nohighlight">\(L_i\)</span> is the design pinion load for each bin, and <span class="math notranslate nohighlight">\(m\)</span> is the power. Since, design values are used, the total damage is equated to 1 and the factors are then calculated as follows:</p>
 <div class="math-wrapper docutils container">
 <div class="math notranslate nohighlight">
-\[factor = 1 / damage\]</div>
+\[factor = 1 / total damage\]</div>
 </div>
 </dd></dl>
 
