@@ -103,6 +103,11 @@ def add(x, y):
     :param y: The second number.
     :type y: float or int
 
+    .. math::
+        \sum_{i=1}^{n} \frac{d_i}{L_i} = 1
+
+    where :math:`d_i` is the design distance and :math:`L_i` is the design pinion load for each bin. The factors are then calculated as follows:
+    
     Returns:
         float or int: The result of the addition operation.
     """
