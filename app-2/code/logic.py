@@ -113,7 +113,7 @@ def calculate_factors(config_bin_settings: dict) -> np.ndarray:
     This method calculates the factors for each load bins. It uses the design pinion loads and distances, substitutes them in the following equation:
 
     .. math::
-        Damage  &= \sum_{i=1}^{n} [{d_i} * {L_i}^m] = 1 
+        Damage  = \sum_{i=1}^{n} [{d_i} * {L_i}^m] = 1 
         
     
     where :math:`d_i` is the design distance, :math:`L_i` is the design pinion load for each bin and :math:`m` is the power. The factors are then calculated as follows:
