@@ -307,35 +307,37 @@ The leg data includes the load and the distance travelled by the leg. The config
 <dl class="py function">
 <dt class="sig sig-object py" id="logic.add">
 <span class="sig-prename descclassname"><span class="pre">logic.</span></span><span class="sig-name descname"><span class="pre">add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#logic.add" title="Link to this definition">#</a></dt>
-<dd><blockquote>
-<div><p>Perform addition of two numbers.</p>
+<dd><p>Perform addition of two numbers.</p>
 <dl class="field-list simple">
-<dt class="field-odd">param x<span class="colon">:</span></dt>
-<dd class="field-odd"><p>The first number.</p>
-</dd>
-<dt class="field-even">type x<span class="colon">:</span></dt>
-<dd class="field-even"><p>float or int</p>
-</dd>
-<dt class="field-odd">param y<span class="colon">:</span></dt>
-<dd class="field-odd"><p>The second number.</p>
-</dd>
-<dt class="field-even">type y<span class="colon">:</span></dt>
-<dd class="field-even"><p>float or int</p>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>float</em><em> or </em><em>int</em>) – The first number.</p></li>
+<li><p><strong>y</strong> (<em>float</em><em> or </em><em>int</em>) – The second number.</p></li>
+</ul>
 </dd>
 </dl>
-<div class="math-wrapper docutils container">
-<div class="math notranslate nohighlight">
-\[\sum_{i=1}^{n}\]</div>
-</div>
-</div></blockquote>
-<p>rac{d_i}{L_i} = 1</p>
-<blockquote>
-<div><p>where <span class="math notranslate nohighlight">\(d_i\)</span> is the design distance and <span class="math notranslate nohighlight">\(L_i\)</span> is the design pinion load for each bin. The factors are then calculated as follows:</p>
 <dl class="simple">
 <dt>Returns:</dt><dd><p>float or int: The result of the addition operation.</p>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="logic.calculate_factors">
+<span class="sig-prename descclassname"><span class="pre">logic.</span></span><span class="sig-name descname"><span class="pre">calculate_factors</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config_bin_settings</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span></span></span><a class="headerlink" href="#logic.calculate_factors" title="Link to this definition">#</a></dt>
+<dd><blockquote>
+<div><p>This method calculates the factors for each load bins. It uses the design pinion loads and distances, substitutes them in the following equation:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[Damage = \sum_{i=1}^{n} {d_i} * {L_i}^m = 1 \\]</div>
+</div>
+<p>where <span class="math notranslate nohighlight">\(d_i\)</span> is the design distance, <span class="math notranslate nohighlight">\(L_i\)</span> is the design pinion load for each bin and :math: <cite>m</cite> is the power. The factors are then calculated as follows:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[factor = \]</div>
+</div>
 </div></blockquote>
+<p>rac{1}{damage}</p>
 </dd></dl>
 
 </section>
@@ -433,6 +435,7 @@ The leg data includes the load and the distance travelled by the leg. The config
 </ul>
 </li>
 <li><a class="reference internal" href="#logic.add"><code class="docutils literal notranslate"><span class="pre">add()</span></code></a></li>
+<li><a class="reference internal" href="#logic.calculate_factors"><code class="docutils literal notranslate"><span class="pre">calculate_factors()</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#crud-operations">CRUD Operations</a></li>
