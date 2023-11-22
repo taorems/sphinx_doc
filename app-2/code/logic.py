@@ -103,7 +103,7 @@ def add(x, y):
     :param y: The second number.
     :type y: float or int
 
-    Returns:
+    :returns:
         float or int: The result of the addition operation.
     """
     return x + y
@@ -116,7 +116,7 @@ def calculate_factors(config_bin_settings: dict) -> np.ndarray:
         {Total\ damage}  =  {factor} * \sum_{i=1}^{n} [{d_i} * {L_i}^m] = 1
         
     
-    where :math:`factor` is the factor, :math:`d_i` is the design distance and :math:`L_i` is the design pinion load for each bin, :math:`n` is the number of load bins and :math:`m` is the power. Since, design values are used, the total damage is equated to 1 and the factors are then calculated as follows:
+    where, :math:`factor` is the factor, :math:`d_i` is the design distance and :math:`L_i` is the design pinion load for each bin, :math:`n` is the number of load bins and :math:`m` is the power. Since, design values are used, the total damage is equated to 1 and the factors are then calculated as follows:
 
     .. math::
         factor = 1 / {total\ damage}
