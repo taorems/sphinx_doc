@@ -35,11 +35,8 @@ Description on the codebase.
 Few Terminologies
 -----------------	
 
-.. automethod:: models.Asset
-    :noindex:
-
-.. automethod:: models.Operation
-    :noindex:
+.. automodule:: models
+    :members:
 
 
 Logic
