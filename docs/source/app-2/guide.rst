@@ -32,8 +32,8 @@ Codebase Description
 
 Description on the codebase.
 
-Few Terminologies
------------------	
+Models
+------
 
 .. automodule:: models
     :members:
