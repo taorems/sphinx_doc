@@ -35,7 +35,7 @@ Description on the codebase.
 Few Terminologies
 -----------------	
 
-.. automodule:: models
+.. automethod:: models
     :members:
     :noindex:
 
