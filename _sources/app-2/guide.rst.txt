@@ -37,6 +37,7 @@ Few Terminologies
 
 .. automodule:: models
     :members:
+    :noindex:
 
 
 Logic
