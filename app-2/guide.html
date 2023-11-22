@@ -228,16 +228,19 @@
 <h2>Codebase Description<a class="headerlink" href="#codebase-description" title="Link to this heading">#</a></h2>
 <p>Description on the codebase.</p>
 <section id="module-models">
-<span id="few-terminologies"></span><h3>Few Terminologies<a class="headerlink" href="#module-models" title="Link to this heading">#</a></h3>
+<span id="models"></span><h3>Models<a class="headerlink" href="#module-models" title="Link to this heading">#</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="models.Asset">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">models.</span></span><span class="sig-name descname"><span class="pre">Asset</span></span><a class="headerlink" href="#models.Asset" title="Link to this definition">#</a></dt>
-<dd></dd></dl>
+<dd><p>Assets are the offshore units for which the jacking system data are being collected.</p>
+</dd></dl>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="models.Operation">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">models.</span></span><span class="sig-name descname"><span class="pre">Operation</span></span><a class="headerlink" href="#models.Operation" title="Link to this definition">#</a></dt>
-<dd></dd></dl>
+<dd><p>Operations performed by the asset are called Operations. This includes operations such as leg lowering, leg lifting, platform lowering, platform lifting, preload lowering, preload lifting, etc. 
+The load and distance data for each operation is collected and stored in the database.</p>
+</dd></dl>
 
 </section>
 <section id="logic">
@@ -426,7 +429,7 @@ The leg data includes the load and the distance travelled by the leg. The config
 </ul>
 </li>
 <li><a class="reference internal" href="#codebase-description">Codebase Description</a><ul>
-<li><a class="reference internal" href="#module-models">Few Terminologies</a><ul>
+<li><a class="reference internal" href="#module-models">Models</a><ul>
 <li><a class="reference internal" href="#models.Asset"><code class="docutils literal notranslate"><span class="pre">Asset</span></code></a></li>
 <li><a class="reference internal" href="#models.Operation"><code class="docutils literal notranslate"><span class="pre">Operation</span></code></a></li>
 </ul>
