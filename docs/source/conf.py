@@ -40,7 +40,6 @@ extensions = [
     'sphinxcontrib.swaggerui',
     'swagger_plugin_for_sphinx',
     'sphinx_tabs.tabs',
-    "sphinx_new_tab_link",
 ]
 
 templates_path = ['app-1/_templates', 'app-2/_templates']
