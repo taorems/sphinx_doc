@@ -335,17 +335,21 @@ the following .yml workflow is added for GitHub Actions.</p>
 <span class="linenos">26</span>        run: | 
 <span class="linenos">27</span>            python -m pip install --upgrade pip
 <span class="linenos">28</span>            pip install -r requirements.txt
-<span class="linenos">29</span>
-<span class="linenos">30</span>      - name: Build
-<span class="linenos">31</span>        run: | 
-<span class="linenos">32</span>            cd ./docs
-<span class="linenos">33</span>            make html     
-<span class="linenos">34</span>
-<span class="linenos">35</span>      - name: Deploy
-<span class="linenos">36</span>        uses: peaceiris/actions-gh-pages@v3
-<span class="linenos">37</span>        with:
-<span class="linenos">38</span>          github_token: ${{ secrets.GITHUB_TOKEN }}
-<span class="linenos">39</span>          publish_dir: docs/build/html
+<span class="linenos">29</span>      
+<span class="linenos">30</span>      - name: Check current directory
+<span class="linenos">31</span>        run: |
+<span class="linenos">32</span>            pwd
+<span class="linenos">33</span>            ls -la
+<span class="linenos">34</span>      - name: Build
+<span class="linenos">35</span>        run: | 
+<span class="linenos">36</span>            cd ./docs
+<span class="linenos">37</span>            make html     
+<span class="linenos">38</span>
+<span class="linenos">39</span>      - name: Deploy
+<span class="linenos">40</span>        uses: peaceiris/actions-gh-pages@v3
+<span class="linenos">41</span>        with:
+<span class="linenos">42</span>          github_token: ${{ secrets.GITHUB_TOKEN }}
+<span class="linenos">43</span>          publish_dir: docs/build/html
 </pre></div>
 </div>
 </div>
