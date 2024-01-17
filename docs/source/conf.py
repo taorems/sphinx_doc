@@ -34,7 +34,6 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinx.ext.autosummary',
     'sphinx.ext.imgconverter',
-    # 'sphinx.ext.apidoc',
     'sphinxcontrib.openapi',
     'sphinxcontrib.httpdomain',
     'sphinxcontrib.swaggerui',
