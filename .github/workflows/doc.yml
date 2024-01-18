@@ -31,11 +31,18 @@ jobs:
         run: |
             pwd
             ls -la
+      - name: Check path of config file
+        run: |
+            cd ./docs
+            pwd
+            ls -la
+            cd ./source
+            pwd
+            ls -la
       - name: Build
         run: | 
             cd ./docs
             make html     
-
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
