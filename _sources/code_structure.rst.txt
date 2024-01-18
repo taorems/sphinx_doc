@@ -1,4 +1,0 @@
-Code Structure
-==============
-
-The code is structured as follows:

@@ -268,12 +268,16 @@ For instance, if the project has two applications, app-1 and app-2, then create 
 ├── .github/
 |   ├── workflows/
 |   |   ├── doc.yml
-├── app-1/
-│   ├── code/
+├── Lift/
+│   ├── app/
 │   |   ├── python_files.py
-├── app-2/
-│   ├── code/
+├── JSDL/
+│   ├── app/
+|   |   ├── __init__.py
 |   |   ├── python_files.py
+|   |   ├── module_1/
+|   |   |   ├── __init__.py
+|   |   |   ├── python_files.py
 ├── docs/
 |   ├── make.bat
 |   ├── Makefile
@@ -282,14 +286,14 @@ For instance, if the project has two applications, app-1 and app-2, then create 
 │   ├── source/
 │   |   ├── conf.py
 |   |   ├── index.rst
-|   |   ├── app-1
+|   |   ├── Lift
 |   |   |   ├── intro.rst
 |   |   |   ├── usage.rst
 |   |   |   ├── api.rst
 |   |   |   ├── frontend.rst
 |   |   |   ├── _static/
 |   |   |         ├── swaggerui/
-|   |   ├── app-2
+|   |   ├── JSDL
 |   |       ├── intro.rst
 |   |       ├── usage.rst
 |   |       ├── api.rst
@@ -351,12 +355,13 @@ the following .yml workflow is added for GitHub Actions.</p>
 <span class="linenos">42</span>      - name: Build
 <span class="linenos">43</span>        run: | 
 <span class="linenos">44</span>            cd ./docs
-<span class="linenos">45</span>            make html     
-<span class="linenos">46</span>      - name: Deploy
-<span class="linenos">47</span>        uses: peaceiris/actions-gh-pages@v3
-<span class="linenos">48</span>        with:
-<span class="linenos">49</span>          github_token: ${{ secrets.GITHUB_TOKEN }}
-<span class="linenos">50</span>          publish_dir: docs/build/html
+<span class="linenos">45</span>            make clean
+<span class="linenos">46</span>            make html     
+<span class="linenos">47</span>      - name: Deploy
+<span class="linenos">48</span>        uses: peaceiris/actions-gh-pages@v3
+<span class="linenos">49</span>        with:
+<span class="linenos">50</span>          github_token: ${{ secrets.GITHUB_TOKEN }}
+<span class="linenos">51</span>          publish_dir: docs/build/html
 </pre></div>
 </div>
 </div>

@@ -85,12 +85,16 @@ The directory structure should look something like this:
    ├── .github/
    |   ├── workflows/
    |   |   ├── doc.yml
-   ├── app-1/
-   │   ├── code/
+   ├── Lift/
+   │   ├── app/
    │   |   ├── python_files.py
-   ├── app-2/
-   │   ├── code/
+   ├── JSDL/
+   │   ├── app/
+   |   |   ├── __init__.py
    |   |   ├── python_files.py
+   |   |   ├── module_1/
+   |   |   |   ├── __init__.py
+   |   |   |   ├── python_files.py
    ├── docs/
    |   ├── make.bat
    |   ├── Makefile
@@ -99,14 +103,14 @@ The directory structure should look something like this:
    │   ├── source/
    │   |   ├── conf.py
    |   |   ├── index.rst
-   |   |   ├── app-1
+   |   |   ├── Lift
    |   |   |   ├── intro.rst
    |   |   |   ├── usage.rst
    |   |   |   ├── api.rst
    |   |   |   ├── frontend.rst
    |   |   |   ├── _static/
    |   |   |         ├── swaggerui/
-   |   |   ├── app-2
+   |   |   ├── JSDL
    |   |       ├── intro.rst
    |   |       ├── usage.rst
    |   |       ├── api.rst
